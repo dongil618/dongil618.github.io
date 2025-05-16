@@ -4,6 +4,7 @@ title: "String vs StringBuffer"
 date: 2025-05-16 10:00:00 +0900
 categories: [JAVA]
 tags: [JAVA]
+pin: true
 ---
 
 ## 참고자료
