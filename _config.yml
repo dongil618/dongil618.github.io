@@ -218,6 +218,7 @@ exclude:
 
 include:
   - app-ads.txt
+  - robots.txt
 
 jekyll-archives:
   enabled: [categories, tags]
