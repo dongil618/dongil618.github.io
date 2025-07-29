@@ -220,6 +220,7 @@ include:
   - app-ads.txt
   - robots.txt
   - MilitaryHonorMap
+  - waterreminderapp
 
 jekyll-archives:
   enabled: [categories, tags]
