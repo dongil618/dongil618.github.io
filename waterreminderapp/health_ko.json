@@ -1,29 +1,28 @@
 [
   {
-    "title": "물을 많이 마셔야 하는 이유",
-    "summary": "수분 섭취는 건강에 어떤 이점을 줄까요? 전문가들이 알려주는 수분 섭취의 중요성.",
-    "thumbnail": "https://example.com/thumbnails/water-benefits.jpg",
-    "url": "https://example.com/articles/water-benefits",
-    "type": "article",
-    "tags": ["수분", "건강", "생활습관"],
-    "publishedAt": "2025-07-28T10:30:00"
-  },
-  {
-    "title": "하루에 필요한 물의 양은?",
-    "summary": "체중, 활동량에 따라 달라지는 하루 물 섭취 권장량을 알아보세요.",
-    "thumbnail": "https://example.com/thumbnails/water-intake.jpg",
-    "url": "https://example.com/articles/daily-water-intake",
-    "type": "article",
-    "tags": ["수분", "건강정보", "체중"],
-    "publishedAt": "2025-07-27T08:00:00"
-  },
-  {
-    "title": "수분 부족 시 나타나는 신호들",
-    "summary": "몸이 보내는 탈수 증상 신호들을 조기에 인지해 예방하세요.",
-    "thumbnail": "https://example.com/thumbnails/dehydration-signs.jpg",
-    "url": "https://example.com/articles/dehydration-signs",
+    "id": "1753887712225",
+    "title": "물 이렇게 마시면 효과 10배! 혈액을 맑게 하고 독소를 배출한다! [방태환원장의 건강강의]",
+    "summary": "",
+    "thumbnail": "https://img.youtube.com/vi/F0QYrw-79uA/maxresdefault.jpg",
+    "url": "https://www.youtube.com/watch?v=F0QYrw-79uA",
     "type": "video",
-    "tags": ["건강", "경고신호", "탈수"],
-    "publishedAt": "2025-07-25T14:15:00"
+    "tags": [
+      "물 마시기 습관",
+      "나음힐링센터 방태환원장"
+    ],
+    "publishedAt": "2025-07-30T15:01:52.225Z"
+  },
+  {
+    "id": "1753887811405",
+    "title": "‘물’, 우리 몸을 바꾸는 뜻밖의 효능 10",
+    "summary": "",
+    "thumbnail": "https://kormedi.com/wp-content/uploads/2023/03/ck-tip004t118333-l-700x466.jpg",
+    "url": "https://kormedi.com/1579288/",
+    "type": "article",
+    "tags": [
+      "물 효능",
+      "코메디닷컴"
+    ],
+    "publishedAt": "2025-07-30T15:03:31.405Z"
   }
 ]
