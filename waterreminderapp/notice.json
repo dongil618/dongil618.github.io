@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastUpdated": "2024-08-08T10:00:00Z",
+  "lastUpdated": "2025-08-08T10:00:00Z",
   "notices": [
     {
       "id": "notice_20240808_001",
@@ -30,8 +30,8 @@
       },
       "priority": "high",
       "type": "update",
-      "showAfter": "2024-08-08T00:00:00Z",
-      "expireAt": "2024-09-08T23:59:59Z",
+      "showAfter": "2025-08-08T00:00:00Z",
+      "expireAt": "2025-09-08T23:59:59Z",
       "imageUrl": null,
       "actionButton": {
         "text": {
@@ -83,8 +83,8 @@
       },
       "priority": "medium",
       "type": "event",
-      "showAfter": "2024-08-08T00:00:00Z",
-      "expireAt": "2024-08-15T23:59:59Z",
+      "showAfter": "2025-08-08T00:00:00Z",
+      "expireAt": "2025-08-15T23:59:59Z",
       "imageUrl": null,
       "actionButton": {
         "text": {
@@ -136,8 +136,8 @@
       },
       "priority": "low",
       "type": "promotion",
-      "showAfter": "2024-08-08T00:00:00Z",
-      "expireAt": "2024-08-22T23:59:59Z",
+      "showAfter": "2025-08-08T00:00:00Z",
+      "expireAt": "2025-08-22T23:59:59Z",
       "imageUrl": null,
       "actionButton": {
         "text": {
