@@ -1,17 +1,24 @@
 {
-  "lastUpdated": "2025-08-13T10:36:57.554Z",
-  "version": "20250813_103657",
+  "lastUpdated": "2025-08-13T11:15:14.511Z",
+  "version": "20250813_111514",
   "source": "병무청 예우시설 목록",
   "updateReason": "Data content changed",
   "facilitiesCount": 1735,
   "categories": [
   "ACCOMMODATION",
+  "CULTURE",
   "EDUCATION",
   "FITNESS",
+  "FUNERAL",
   "HOSPITAL",
   "MART",
+  "MEMORIAL_MUSEUM",
+  "NATURAL_FOREST",
   "OPTICAL_SHOP",
   "OTHER",
-  "RESTAURANT"
+  "PALACE_HERITAGE",
+  "PARKING",
+  "RESTAURANT",
+  "TOURIST_SPOT"
 ]
 }
