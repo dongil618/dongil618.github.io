@@ -1,8 +1,17 @@
 {
-  "lastUpdated": "2025-07-21T13:34:56.793Z",
-  "version": "20250721_133456",
+  "lastUpdated": "2025-08-13T10:36:57.554Z",
+  "version": "20250813_103657",
   "source": "병무청 예우시설 목록",
   "updateReason": "Data content changed",
-  "facilitiesCount": 1722,
-  "categories": ["OTHER"]
+  "facilitiesCount": 1735,
+  "categories": [
+  "ACCOMMODATION",
+  "EDUCATION",
+  "FITNESS",
+  "HOSPITAL",
+  "MART",
+  "OPTICAL_SHOP",
+  "OTHER",
+  "RESTAURANT"
+]
 }
