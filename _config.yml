@@ -221,6 +221,7 @@ include:
   - robots.txt
   - MilitaryHonorMap
   - waterreminderapp
+  - smartfinancecalc
 
 jekyll-archives:
   enabled: [categories, tags]
