@@ -3,26 +3,47 @@ layout: null
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  {% comment %} 기존: 포스트들 {% endcomment %}
   {% for post in site.posts %}
     <url>
-      <loc>{{ site.url }}{{ post.url }}</loc>
+      <loc>{{ site.url }}{{ site.baseurl }}{{ post.url }}</loc>
       {% if post.lastmod == null %}
         <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
       {% else %}
         <lastmod>{{ post.lastmod | date_to_xmlschema }}</lastmod>
       {% endif %}
+      <changefreq>{{ post.sitemap.changefreq | default: "weekly" }}</changefreq>
+      <priority>{{ post.sitemap.priority | default: 0.5 }}</priority>
+    </url>
+  {% endfor %}
 
-      {% if post.sitemap.changefreq == null %}
-        <changefreq>weekly</changefreq>
-      {% else %}
-        <changefreq>{{ post.sitemap.changefreq }}</changefreq>
-      {% endif %}
+  {% comment %}
+    추가: 루트의 robots.txt, app-ads.txt
+    - 파일에 프론트매터가 있으면 site.pages
+    - 순수 정적이면 site.static_files
+  {% endcomment %}
 
-      {% if post.sitemap.priority == null %}
-        <priority>0.5</priority>
-      {% else %}
-        <priority>{{ post.sitemap.priority }}</priority>
+  {% assign root_pages = site.pages | where_exp: "p", "p.url == '/robots.txt' or p.url == '/app-ads.txt'" %}
+  {% for p in root_pages %}
+    <url>
+      <loc>{{ site.url }}{{ site.baseurl }}{{ p.url }}</loc>
+      {% if p.last_modified_at %}
+        <lastmod>{{ p.last_modified_at | date_to_xmlschema }}</lastmod>
       {% endif %}
+      <changefreq>monthly</changefreq>
+      <priority>0.2</priority>
+    </url>
+  {% endfor %}
+
+  {% assign root_static = site.static_files | where_exp: "f", "f.path == '/robots.txt' or f.path == '/app-ads.txt'" %}
+  {% for f in root_static %}
+    <url>
+      <loc>{{ site.url }}{{ site.baseurl }}{{ f.path }}</loc>
+      {% if f.modified_time %}
+        <lastmod>{{ f.modified_time | date_to_xmlschema }}</lastmod>
+      {% endif %}
+      <changefreq>monthly</changefreq>
+      <priority>0.2</priority>
     </url>
   {% endfor %}
 </urlset>
