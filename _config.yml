@@ -223,6 +223,7 @@ include:
   - MilitaryHonorMap
   - waterreminderapp
   - smartfinancecalc
+  - inworks-tech
 
 jekyll-archives:
   enabled: [categories, tags]
