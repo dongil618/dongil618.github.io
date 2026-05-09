@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-09T15:23:33+00:00",
+  "generatedAt": "2026-05-09T15:45:59+00:00",
   "files": {
     "benefits": {
       "bytes": 16336,
@@ -10,7 +10,7 @@
       "items": 100
     },
     "va_rates": {
-      "bytes": 3687,
+      "bytes": 3712,
       "items": 10
     }
   }
