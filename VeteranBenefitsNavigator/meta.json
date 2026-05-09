@@ -1,0 +1,17 @@
+{
+  "generatedAt": "2026-05-08T07:23:39+00:00",
+  "files": {
+    "benefits": {
+      "bytes": 9664,
+      "items": 5
+    },
+    "stores": {
+      "bytes": 64185,
+      "items": 100
+    },
+    "va_rates": {
+      "bytes": 3687,
+      "items": 10
+    }
+  }
+}

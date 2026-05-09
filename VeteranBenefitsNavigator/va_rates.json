@@ -1,0 +1,128 @@
+{
+  "year": 2026,
+  "colaApplied": true,
+  "colaFactor": 1.025,
+  "disclaimer": "Draft figures derived from 2025 VA.gov tables with an estimated COLA. Verify against https://www.va.gov/disability/compensation-rates/veteran-rates/ before relying on these numbers.",
+  "rates": [
+    {
+      "ratingPct": 10,
+      "alone": 179.9,
+      "withSpouse": 179.9,
+      "withSpouseOneParent": 179.9,
+      "withSpouseTwoParents": 179.9,
+      "oneParent": 179.9,
+      "twoParents": 179.9,
+      "perAdditionalChildUnder18": 0.0,
+      "perChildOver18InSchool": 0.0,
+      "perAdditionalSpouseAandA": 0.0
+    },
+    {
+      "ratingPct": 20,
+      "alone": 355.62,
+      "withSpouse": 355.62,
+      "withSpouseOneParent": 355.62,
+      "withSpouseTwoParents": 355.62,
+      "oneParent": 355.62,
+      "twoParents": 355.62,
+      "perAdditionalChildUnder18": 0.0,
+      "perChildOver18InSchool": 0.0,
+      "perAdditionalSpouseAandA": 0.0
+    },
+    {
+      "ratingPct": 30,
+      "alone": 550.86,
+      "withSpouse": 615.67,
+      "withSpouseOneParent": 667.71,
+      "withSpouseTwoParents": 719.74,
+      "oneParent": 602.89,
+      "twoParents": 654.93,
+      "perAdditionalChildUnder18": 31.78,
+      "perChildOver18InSchool": 102.5,
+      "perAdditionalSpouseAandA": 59.45
+    },
+    {
+      "ratingPct": 40,
+      "alone": 793.51,
+      "withSpouse": 880.82,
+      "withSpouseOneParent": 949.31,
+      "withSpouseTwoParents": 1017.8,
+      "oneParent": 862.0,
+      "twoParents": 930.5,
+      "perAdditionalChildUnder18": 42.03,
+      "perChildOver18InSchool": 136.33,
+      "perAdditionalSpouseAandA": 78.93
+    },
+    {
+      "ratingPct": 50,
+      "alone": 1129.59,
+      "withSpouse": 1238.55,
+      "withSpouseOneParent": 1323.32,
+      "withSpouseTwoParents": 1408.08,
+      "oneParent": 1214.36,
+      "twoParents": 1299.13,
+      "perAdditionalChildUnder18": 53.3,
+      "perChildOver18InSchool": 171.18,
+      "perAdditionalSpouseAandA": 99.43
+    },
+    {
+      "ratingPct": 60,
+      "alone": 1430.83,
+      "withSpouse": 1562.03,
+      "withSpouseOneParent": 1664.53,
+      "withSpouseTwoParents": 1767.03,
+      "oneParent": 1533.33,
+      "twoParents": 1635.83,
+      "perAdditionalChildUnder18": 63.55,
+      "perChildOver18InSchool": 205.0,
+      "perAdditionalSpouseAandA": 118.9
+    },
+    {
+      "ratingPct": 70,
+      "alone": 1803.17,
+      "withSpouse": 1955.89,
+      "withSpouseOneParent": 2074.79,
+      "withSpouseTwoParents": 2193.69,
+      "oneParent": 1922.07,
+      "twoParents": 2040.97,
+      "perAdditionalChildUnder18": 73.8,
+      "perChildOver18InSchool": 238.83,
+      "perAdditionalSpouseAandA": 138.38
+    },
+    {
+      "ratingPct": 80,
+      "alone": 2096.01,
+      "withSpouse": 2270.26,
+      "withSpouseOneParent": 2406.59,
+      "withSpouseTwoParents": 2542.91,
+      "oneParent": 2232.34,
+      "twoParents": 2368.66,
+      "perAdditionalChildUnder18": 84.05,
+      "perChildOver18InSchool": 272.65,
+      "perAdditionalSpouseAandA": 158.88
+    },
+    {
+      "ratingPct": 90,
+      "alone": 2355.41,
+      "withSpouse": 2552.21,
+      "withSpouseOneParent": 2704.93,
+      "withSpouseTwoParents": 2857.66,
+      "oneParent": 2508.13,
+      "twoParents": 2660.86,
+      "perAdditionalChildUnder18": 95.33,
+      "perChildOver18InSchool": 307.5,
+      "perAdditionalSpouseAandA": 178.35
+    },
+    {
+      "ratingPct": 100,
+      "alone": 3927.08,
+      "withSpouse": 4146.03,
+      "withSpouseOneParent": 4314.66,
+      "withSpouseTwoParents": 4483.28,
+      "oneParent": 4095.71,
+      "twoParents": 4264.33,
+      "perAdditionalChildUnder18": 106.14,
+      "perChildOver18InSchool": 342.85,
+      "perAdditionalSpouseAandA": 198.17
+    }
+  ]
+}

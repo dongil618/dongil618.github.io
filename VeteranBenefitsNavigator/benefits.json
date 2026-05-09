@@ -1,0 +1,186 @@
+{
+  "lastUpdated": "2026-05-08T07:23:39+00:00",
+  "disclaimer": "Step-by-step guidance is informational only. Always verify the current process at VA.gov before submitting forms.",
+  "benefits": [
+    {
+      "id": "disability_comp",
+      "type": "DISABILITY_COMP",
+      "title": "VA Disability Compensation",
+      "summary": "Tax-free monthly payment for service-connected conditions. The earlier you file, the earlier your effective date and back pay.",
+      "estimatedValueUsd": 12000,
+      "timeToApplyMinutes": 60,
+      "eligibilityNotes": "Active-duty, Guard, or Reserve service with a current condition linked to that service. Discharge other than dishonorable. Even 0% rated claims are worth filing \u2014 they unlock other benefits.",
+      "externalUrl": "https://www.va.gov/disability/how-to-file-claim/",
+      "steps": [
+        {
+          "order": 1,
+          "title": "Gather your evidence",
+          "description": "Pull your DD-214, Service Treatment Records, and any current diagnosis paperwork. A nexus letter from your doctor is the single most useful document.",
+          "externalUrl": "https://www.va.gov/disability/how-to-file-claim/evidence-needed/"
+        },
+        {
+          "order": 2,
+          "title": "Submit an Intent to File (Form 21-0966)",
+          "description": "This locks in your effective date for back pay while you finish the rest of the claim. Takes ~5 minutes.",
+          "externalUrl": "https://www.va.gov/find-forms/about-form-21-0966/"
+        },
+        {
+          "order": 3,
+          "title": "File the claim on VA.gov or with a VSO",
+          "description": "File online at VA.gov, or work with a free Veterans Service Officer (DAV, VFW, American Legion). VSOs are free and dramatically improve approval odds.",
+          "externalUrl": "https://www.va.gov/disability/how-to-file-claim/"
+        },
+        {
+          "order": 4,
+          "title": "Attend C&P exams",
+          "description": "VA will schedule Compensation & Pension exams. Show up, be honest about your worst day (not your best), and describe how the condition affects daily life.",
+          "externalUrl": null
+        },
+        {
+          "order": 5,
+          "title": "Track and appeal",
+          "description": "Decisions land on VA.gov in 3\u20136 months. If a rating is low, you can file a Higher-Level Review or Supplemental Claim within a year.",
+          "externalUrl": "https://www.va.gov/decision-reviews/"
+        }
+      ]
+    },
+    {
+      "id": "gi_bill",
+      "type": "GI_BILL",
+      "title": "Post-9/11 GI Bill",
+      "summary": "Up to 36 months of tuition, a monthly housing stipend, and a books allowance. Use it for college, trade school, certifications, or apprenticeships.",
+      "estimatedValueUsd": 80000,
+      "timeToApplyMinutes": 30,
+      "eligibilityNotes": "At least 90 days of active duty after Sep 10, 2001 (or 30 days with a service-connected discharge). Forever GI Bill removes the 15-year expiration for service that ended on or after Jan 1, 2013.",
+      "externalUrl": "https://www.va.gov/education/about-gi-bill-benefits/post-9-11/",
+      "steps": [
+        {
+          "order": 1,
+          "title": "Apply for your Certificate of Eligibility",
+          "description": "Submit VA Form 22-1990 on VA.gov. The Certificate of Eligibility (COE) tells you and your school how many months you have left.",
+          "externalUrl": "https://www.va.gov/education/how-to-apply/"
+        },
+        {
+          "order": 2,
+          "title": "Pick an approved school or program",
+          "description": "Use the GI Bill Comparison Tool to check tuition cap, BAH rate, graduation outcomes, and complaints history.",
+          "externalUrl": "https://www.va.gov/education/gi-bill-comparison-tool/"
+        },
+        {
+          "order": 3,
+          "title": "Enroll and submit a VA-22-1995 if you transfer",
+          "description": "Talk to your school's VA certifying official. They submit your enrollment to VA each term.",
+          "externalUrl": null
+        },
+        {
+          "order": 4,
+          "title": "Verify enrollment monthly",
+          "description": "Use Enrollment Verification on VA.gov or text VETTEXT to keep your housing payments flowing.",
+          "externalUrl": "https://www.va.gov/education/verify-school-enrollment/"
+        }
+      ]
+    },
+    {
+      "id": "home_loan",
+      "type": "HOME_LOAN",
+      "title": "VA Home Loan",
+      "summary": "Zero down payment, no PMI, and competitive rates \u2014 the most valuable financial benefit most veterans never use.",
+      "estimatedValueUsd": 50000,
+      "timeToApplyMinutes": 20,
+      "eligibilityNotes": "90+ days of active service during wartime, 181+ days during peacetime, or 6 years in the National Guard / Reserve. Surviving spouses can also qualify.",
+      "externalUrl": "https://www.va.gov/housing-assistance/home-loans/",
+      "steps": [
+        {
+          "order": 1,
+          "title": "Request your Certificate of Eligibility (COE)",
+          "description": "Apply on VA.gov in ~5 minutes, or have a VA-approved lender pull it for you instantly.",
+          "externalUrl": "https://www.va.gov/housing-assistance/home-loans/how-to-apply/"
+        },
+        {
+          "order": 2,
+          "title": "Shop multiple VA-approved lenders",
+          "description": "Get Loan Estimates from at least 3 lenders. The funding fee is lender-neutral; rates and origination fees are not.",
+          "externalUrl": null
+        },
+        {
+          "order": 3,
+          "title": "Get pre-approved",
+          "description": "A pre-approval letter shows sellers you are serious and locks in the property limits you can afford.",
+          "externalUrl": null
+        },
+        {
+          "order": 4,
+          "title": "Find the home and get a VA appraisal",
+          "description": "VA appraisers check fair value AND minimum property requirements. Plan for 2\u20133 weeks.",
+          "externalUrl": null
+        },
+        {
+          "order": 5,
+          "title": "Close \u2014 and ask about the funding fee waiver",
+          "description": "Veterans receiving disability compensation are exempt from the funding fee. Make your lender confirm this in writing before closing.",
+          "externalUrl": "https://www.va.gov/housing-assistance/home-loans/funding-fee-and-closing-costs/"
+        }
+      ]
+    },
+    {
+      "id": "voc_rehab",
+      "type": "VOC_REHAB",
+      "title": "Veteran Readiness & Employment (VR&E)",
+      "summary": "Career counseling, training, and tuition (often more generous than the GI Bill) for veterans with a service-connected disability.",
+      "estimatedValueUsd": 60000,
+      "timeToApplyMinutes": 30,
+      "eligibilityNotes": "Service-connected disability rating of 10% or higher (in some cases 20%) and an employment handicap. Eligibility window has been removed for many discharges.",
+      "externalUrl": "https://www.va.gov/careers-employment/vocational-rehabilitation/",
+      "steps": [
+        {
+          "order": 1,
+          "title": "Apply with VA Form 28-1900",
+          "description": "Submit on VA.gov. You will be contacted to schedule an Initial Counseling appointment with a Vocational Rehabilitation Counselor (VRC).",
+          "externalUrl": "https://www.va.gov/careers-employment/vocational-rehabilitation/how-to-apply/"
+        },
+        {
+          "order": 2,
+          "title": "Attend your Initial Counseling",
+          "description": "The VRC builds a Rehabilitation Plan with you \u2014 could be Reemployment, Rapid Access to Employment, Self-Employment, Employment Through Long-Term Services, or Independent Living.",
+          "externalUrl": null
+        },
+        {
+          "order": 3,
+          "title": "Sign your Plan and receive subsistence allowance",
+          "description": "Once approved, your tuition and fees are paid directly and you receive a monthly subsistence allowance while in the program.",
+          "externalUrl": null
+        }
+      ]
+    },
+    {
+      "id": "tricare",
+      "type": "TRICARE",
+      "title": "Tricare Health Coverage",
+      "summary": "Health coverage for retirees, medically retired veterans, and their families. Most newly separated veterans should also enroll in VA Health Care.",
+      "estimatedValueUsd": 5000,
+      "timeToApplyMinutes": 15,
+      "eligibilityNotes": "Active-duty retirees and medical retirees qualify for Tricare. All other recently separated veterans should enroll in VA Health Care via Form 10-10EZ \u2014 combat veterans get 10 years of enhanced eligibility.",
+      "externalUrl": "https://www.va.gov/health-care/",
+      "steps": [
+        {
+          "order": 1,
+          "title": "Decide: Tricare or VA Health Care (or both)",
+          "description": "Retirees default to Tricare; non-retirees enroll in VA Health Care. Many veterans are eligible for both and use VA primary care + Tricare for family.",
+          "externalUrl": null
+        },
+        {
+          "order": 2,
+          "title": "Apply for VA Health Care (Form 10-10EZ)",
+          "description": "Apply on VA.gov in ~10 minutes. Combat veterans separated after 1998 receive 10 years of enhanced enrollment regardless of priority group.",
+          "externalUrl": "https://www.va.gov/health-care/apply/application/introduction"
+        },
+        {
+          "order": 3,
+          "title": "Enroll in Tricare (retirees) within 90 days",
+          "description": "Update DEERS first, then choose Tricare Prime, Select, or For Life depending on age and Medicare status.",
+          "externalUrl": "https://www.tricare.mil/"
+        }
+      ]
+    }
+  ]
+}
