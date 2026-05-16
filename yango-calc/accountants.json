@@ -1,0 +1,29 @@
+{
+  "version": "2026-05-16",
+  "updated_at": "2026-05-16T16:27:53.326Z",
+  "accountants": [
+    {
+      "id": "acct_mp8k75qb",
+      "active": true,
+      "sort_order": 100,
+      "name": "테스트",
+      "license_no": "1",
+      "regions": [
+        "서울 강남"
+      ],
+      "specialties": [
+        "capitalGains"
+      ],
+      "intro": "테스트 소개",
+      "contact": {
+        "phone": "010-7279-0098",
+        "kakao_url": null,
+        "website_url": "http://vibecoding-lab.blogspot.com/"
+      },
+      "tier": "seed",
+      "years_experience": 6,
+      "rating": 4.8,
+      "reviews_count": 10
+    }
+  ]
+}
