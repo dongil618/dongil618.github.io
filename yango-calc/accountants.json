@@ -1,13 +1,14 @@
 {
-  "version": "2026-05-16",
-  "updated_at": "2026-05-16T16:27:53.326Z",
+  "version": "2026-05-17",
+  "updated_at": "2026-05-17T05:47:56.765Z",
   "accountants": [
     {
       "id": "acct_mp8k75qb",
-      "active": true,
+      "active": false,
       "sort_order": 100,
       "name": "테스트",
       "license_no": "1",
+      "photo_url": null,
       "regions": [
         "서울 강남"
       ],
