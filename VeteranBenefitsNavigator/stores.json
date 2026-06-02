@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-01T11:22:45+00:00",
+  "lastUpdated": "2026-06-02T10:14:13+00:00",
   "disclaimer": "Discount terms are summarized from each brand's published veteran offer and may vary by franchise. Always confirm at the register before paying.",
   "stores": [
     {
@@ -18,7 +18,7 @@
       "requiresVeteranId": true,
       "phoneNumber": null,
       "website": "https://www.applebees.com/",
-      "lastVerified": "2026-06-01"
+      "lastVerified": "2026-06-02"
     },
     {
       "id": "chilis_new_york",
@@ -36,7 +36,7 @@
       "requiresVeteranId": true,
       "phoneNumber": null,
       "website": "https://www.chilis.com/",
-      "lastVerified": "2026-06-01"
+      "lastVerified": "2026-06-02"
     },
     {
       "id": "dennys_new_york",
@@ -54,7 +54,7 @@
       "requiresVeteranId": true,
       "phoneNumber": null,
       "website": "https://www.dennys.com/",
-      "lastVerified": "2026-06-01"
+      "lastVerified": "2026-06-02"
     },
     {
       "id": "buffalo_wild_wings_new_york",
@@ -72,7 +72,7 @@
       "requiresVeteranId": true,
       "phoneNumber": null,
       "website": "https://www.buffalowildwings.com/",
-      "lastVerified": "2026-06-01"
+      "lastVerified": "2026-06-02"
     },
     {
       "id": "home_depot_new_york",
@@ -90,7 +90,7 @@
       "requiresVeteranId": true,
       "phoneNumber": null,
       "website": "https://www.homedepot.com/c/Pro_MilitaryDiscount",
-      "lastVerified": "2026-06-01"
+      "lastVerified": "2026-06-02"
     },
     {
       "id": "lowes_new_york",
@@ -108,7 +108,7 @@
       "requiresVeteranId": true,
       "phoneNumber": null,
       "website": "https://www.lowes.com/l/military-discount.html",
-      "lastVerified": "2026-06-01"
+      "lastVerified": "2026-06-02"
     },
     {
       "id": "target_new_york",
@@ -126,7 +126,7 @@
       "requiresVeteranId": true,
       "phoneNumber": null,
       "website": "https://www.target.com/c/military-discount",
-      "lastVerified": "2026-06-01"
+      "lastVerified": "2026-06-02"
     },
     {
       "id": "best_buy_new_york",
@@ -144,7 +144,7 @@
       "requiresVeteranId": true,
       "phoneNumber": null,
       "website": "https://www.bestbuy.com/site/electronics/military-and-veteran-offers/",
-      "lastVerified": "2026-06-01"
+      "lastVerified": "2026-06-02"
     },
     {
       "id": "marriott_new_york",
@@ -162,7 +162,7 @@
       "requiresVeteranId": true,
       "phoneNumber": null,
       "website": "https://www.marriott.com/",
-      "lastVerified": "2026-06-01"
+      "lastVerified": "2026-06-02"
     },
     {
       "id": "hilton_new_york",
@@ -180,7 +180,7 @@
       "requiresVeteranId": true,
       "phoneNumber": null,
       "website": "https://www.hilton.com/",
-      "lastVerified": "2026-06-01"
+      "lastVerified": "2026-06-02"
     },
     {
       "id": "ihg_new_york",
@@ -198,7 +198,7 @@
       "requiresVeteranId": true,
       "phoneNumber": null,
       "website": "https://www.ihg.com/",
-      "lastVerified": "2026-06-01"
+      "lastVerified": "2026-06-02"
     },
     {
       "id": "wyndham_new_york",
@@ -216,7 +216,7 @@
       "requiresVeteranId": true,
       "phoneNumber": null,
       "website": "https://www.wyndhamhotels.com/",
-      "lastVerified": "2026-06-01"
+      "lastVerified": "2026-06-02"
     },
     {
       "id": "amc_theatres_new_york",
@@ -234,7 +234,7 @@
       "requiresVeteranId": true,
       "phoneNumber": null,
       "website": "https://www.amctheatres.com/",
-      "lastVerified": "2026-06-01"
+      "lastVerified": "2026-06-02"
     },
     {
       "id": "regal_cinemas_new_york",
@@ -252,7 +252,7 @@
       "requiresVeteranId": true,
       "phoneNumber": null,
       "website": "https://www.regmovies.com/",
-      "lastVerified": "2026-06-01"
+      "lastVerified": "2026-06-02"
     },
     {
       "id": "cinemark_new_york",
@@ -270,7 +270,7 @@
       "requiresVeteranId": true,
       "phoneNumber": null,
       "website": "https://www.cinemark.com/",
-      "lastVerified": "2026-06-01"
+      "lastVerified": "2026-06-02"
     },
     {
       "id": "topgolf_new_york",
@@ -288,7 +288,7 @@
       "requiresVeteranId": true,
       "phoneNumber": null,
       "website": "https://topgolf.com/",
-      "lastVerified": "2026-06-01"
+      "lastVerified": "2026-06-02"
     },
     {
       "id": "jiffy_lube_new_york",
@@ -306,7 +306,7 @@
       "requiresVeteranId": true,
       "phoneNumber": null,
       "website": "https://www.jiffylube.com/",
-      "lastVerified": "2026-06-01"
+      "lastVerified": "2026-06-02"
     },
     {
       "id": "midas_new_york",
@@ -324,7 +324,7 @@
       "requiresVeteranId": true,
       "phoneNumber": null,
       "website": "https://www.midas.com/",
-      "lastVerified": "2026-06-01"
+      "lastVerified": "2026-06-02"
     },
     {
       "id": "goodyear_auto_service_new_york",
@@ -342,7 +342,7 @@
       "requiresVeteranId": true,
       "phoneNumber": null,
       "website": "https://www.goodyearautoservice.com/",
-      "lastVerified": "2026-06-01"
+      "lastVerified": "2026-06-02"
     },
     {
       "id": "enterprise_rent-a-car_new_york",
@@ -360,7 +360,7 @@
       "requiresVeteranId": true,
       "phoneNumber": null,
       "website": "https://www.enterprise.com/en/car-rental/deals/military-discount.html",
-      "lastVerified": "2026-06-01"
+      "lastVerified": "2026-06-02"
     },
     {
       "id": "applebees_los_angeles",
@@ -378,7 +378,7 @@
       "requiresVeteranId": true,
       "phoneNumber": null,
       "website": "https://www.applebees.com/",
-      "lastVerified": "2026-06-01"
+      "lastVerified": "2026-06-02"
     },
     {
       "id": "chilis_los_angeles",
@@ -396,7 +396,7 @@
       "requiresVeteranId": true,
       "phoneNumber": null,
       "website": "https://www.chilis.com/",
-      "lastVerified": "2026-06-01"
+      "lastVerified": "2026-06-02"
     },
     {
       "id": "dennys_los_angeles",
@@ -414,7 +414,7 @@
       "requiresVeteranId": true,
       "phoneNumber": null,
       "website": "https://www.dennys.com/",
-      "lastVerified": "2026-06-01"
+      "lastVerified": "2026-06-02"
     },
     {
       "id": "buffalo_wild_wings_los_angeles",
@@ -432,7 +432,7 @@
       "requiresVeteranId": true,
       "phoneNumber": null,
       "website": "https://www.buffalowildwings.com/",
-      "lastVerified": "2026-06-01"
+      "lastVerified": "2026-06-02"
     },
     {
       "id": "home_depot_los_angeles",
@@ -450,7 +450,7 @@
       "requiresVeteranId": true,
       "phoneNumber": null,
       "website": "https://www.homedepot.com/c/Pro_MilitaryDiscount",
-      "lastVerified": "2026-06-01"
+      "lastVerified": "2026-06-02"
     },
     {
       "id": "lowes_los_angeles",
@@ -468,7 +468,7 @@
       "requiresVeteranId": true,
       "phoneNumber": null,
       "website": "https://www.lowes.com/l/military-discount.html",
-      "lastVerified": "2026-06-01"
+      "lastVerified": "2026-06-02"
     },
     {
       "id": "target_los_angeles",
@@ -486,7 +486,7 @@
       "requiresVeteranId": true,
       "phoneNumber": null,
       "website": "https://www.target.com/c/military-discount",
-      "lastVerified": "2026-06-01"
+      "lastVerified": "2026-06-02"
     },
     {
       "id": "best_buy_los_angeles",
@@ -504,7 +504,7 @@
       "requiresVeteranId": true,
       "phoneNumber": null,
       "website": "https://www.bestbuy.com/site/electronics/military-and-veteran-offers/",
-      "lastVerified": "2026-06-01"
+      "lastVerified": "2026-06-02"
     },
     {
       "id": "marriott_los_angeles",
@@ -522,7 +522,7 @@
       "requiresVeteranId": true,
       "phoneNumber": null,
       "website": "https://www.marriott.com/",
-      "lastVerified": "2026-06-01"
+      "lastVerified": "2026-06-02"
     },
     {
       "id": "hilton_los_angeles",
@@ -540,7 +540,7 @@
       "requiresVeteranId": true,
       "phoneNumber": null,
       "website": "https://www.hilton.com/",
-      "lastVerified": "2026-06-01"
+      "lastVerified": "2026-06-02"
     },
     {
       "id": "ihg_los_angeles",
@@ -558,7 +558,7 @@
       "requiresVeteranId": true,
       "phoneNumber": null,
       "website": "https://www.ihg.com/",
-      "lastVerified": "2026-06-01"
+      "lastVerified": "2026-06-02"
     },
     {
       "id": "wyndham_los_angeles",
@@ -576,7 +576,7 @@
       "requiresVeteranId": true,
       "phoneNumber": null,
       "website": "https://www.wyndhamhotels.com/",
-      "lastVerified": "2026-06-01"
+      "lastVerified": "2026-06-02"
     },
     {
       "id": "amc_theatres_los_angeles",
@@ -594,7 +594,7 @@
       "requiresVeteranId": true,
       "phoneNumber": null,
       "website": "https://www.amctheatres.com/",
-      "lastVerified": "2026-06-01"
+      "lastVerified": "2026-06-02"
     },
     {
       "id": "regal_cinemas_los_angeles",
@@ -612,7 +612,7 @@
       "requiresVeteranId": true,
       "phoneNumber": null,
       "website": "https://www.regmovies.com/",
-      "lastVerified": "2026-06-01"
+      "lastVerified": "2026-06-02"
     },
     {
       "id": "cinemark_los_angeles",
@@ -630,7 +630,7 @@
       "requiresVeteranId": true,
       "phoneNumber": null,
       "website": "https://www.cinemark.com/",
-      "lastVerified": "2026-06-01"
+      "lastVerified": "2026-06-02"
     },
     {
       "id": "topgolf_los_angeles",
@@ -648,7 +648,7 @@
       "requiresVeteranId": true,
       "phoneNumber": null,
       "website": "https://topgolf.com/",
-      "lastVerified": "2026-06-01"
+      "lastVerified": "2026-06-02"
     },
     {
       "id": "jiffy_lube_los_angeles",
@@ -666,7 +666,7 @@
       "requiresVeteranId": true,
       "phoneNumber": null,
       "website": "https://www.jiffylube.com/",
-      "lastVerified": "2026-06-01"
+      "lastVerified": "2026-06-02"
     },
     {
       "id": "midas_los_angeles",
@@ -684,7 +684,7 @@
       "requiresVeteranId": true,
       "phoneNumber": null,
       "website": "https://www.midas.com/",
-      "lastVerified": "2026-06-01"
+      "lastVerified": "2026-06-02"
     },
     {
       "id": "goodyear_auto_service_los_angeles",
@@ -702,7 +702,7 @@
       "requiresVeteranId": true,
       "phoneNumber": null,
       "website": "https://www.goodyearautoservice.com/",
-      "lastVerified": "2026-06-01"
+      "lastVerified": "2026-06-02"
     },
     {
       "id": "enterprise_rent-a-car_los_angeles",
@@ -720,7 +720,7 @@
       "requiresVeteranId": true,
       "phoneNumber": null,
       "website": "https://www.enterprise.com/en/car-rental/deals/military-discount.html",
-      "lastVerified": "2026-06-01"
+      "lastVerified": "2026-06-02"
     },
     {
       "id": "applebees_chicago",
@@ -738,7 +738,7 @@
       "requiresVeteranId": true,
       "phoneNumber": null,
       "website": "https://www.applebees.com/",
-      "lastVerified": "2026-06-01"
+      "lastVerified": "2026-06-02"
     },
     {
       "id": "chilis_chicago",
@@ -756,7 +756,7 @@
       "requiresVeteranId": true,
       "phoneNumber": null,
       "website": "https://www.chilis.com/",
-      "lastVerified": "2026-06-01"
+      "lastVerified": "2026-06-02"
     },
     {
       "id": "dennys_chicago",
@@ -774,7 +774,7 @@
       "requiresVeteranId": true,
       "phoneNumber": null,
       "website": "https://www.dennys.com/",
-      "lastVerified": "2026-06-01"
+      "lastVerified": "2026-06-02"
     },
     {
       "id": "buffalo_wild_wings_chicago",
@@ -792,7 +792,7 @@
       "requiresVeteranId": true,
       "phoneNumber": null,
       "website": "https://www.buffalowildwings.com/",
-      "lastVerified": "2026-06-01"
+      "lastVerified": "2026-06-02"
     },
     {
       "id": "home_depot_chicago",
@@ -810,7 +810,7 @@
       "requiresVeteranId": true,
       "phoneNumber": null,
       "website": "https://www.homedepot.com/c/Pro_MilitaryDiscount",
-      "lastVerified": "2026-06-01"
+      "lastVerified": "2026-06-02"
     },
     {
       "id": "lowes_chicago",
@@ -828,7 +828,7 @@
       "requiresVeteranId": true,
       "phoneNumber": null,
       "website": "https://www.lowes.com/l/military-discount.html",
-      "lastVerified": "2026-06-01"
+      "lastVerified": "2026-06-02"
     },
     {
       "id": "target_chicago",
@@ -846,7 +846,7 @@
       "requiresVeteranId": true,
       "phoneNumber": null,
       "website": "https://www.target.com/c/military-discount",
-      "lastVerified": "2026-06-01"
+      "lastVerified": "2026-06-02"
     },
     {
       "id": "best_buy_chicago",
@@ -864,7 +864,7 @@
       "requiresVeteranId": true,
       "phoneNumber": null,
       "website": "https://www.bestbuy.com/site/electronics/military-and-veteran-offers/",
-      "lastVerified": "2026-06-01"
+      "lastVerified": "2026-06-02"
     },
     {
       "id": "marriott_chicago",
@@ -882,7 +882,7 @@
       "requiresVeteranId": true,
       "phoneNumber": null,
       "website": "https://www.marriott.com/",
-      "lastVerified": "2026-06-01"
+      "lastVerified": "2026-06-02"
     },
     {
       "id": "hilton_chicago",
@@ -900,7 +900,7 @@
       "requiresVeteranId": true,
       "phoneNumber": null,
       "website": "https://www.hilton.com/",
-      "lastVerified": "2026-06-01"
+      "lastVerified": "2026-06-02"
     },
     {
       "id": "ihg_chicago",
@@ -918,7 +918,7 @@
       "requiresVeteranId": true,
       "phoneNumber": null,
       "website": "https://www.ihg.com/",
-      "lastVerified": "2026-06-01"
+      "lastVerified": "2026-06-02"
     },
     {
       "id": "wyndham_chicago",
@@ -936,7 +936,7 @@
       "requiresVeteranId": true,
       "phoneNumber": null,
       "website": "https://www.wyndhamhotels.com/",
-      "lastVerified": "2026-06-01"
+      "lastVerified": "2026-06-02"
     },
     {
       "id": "amc_theatres_chicago",
@@ -954,7 +954,7 @@
       "requiresVeteranId": true,
       "phoneNumber": null,
       "website": "https://www.amctheatres.com/",
-      "lastVerified": "2026-06-01"
+      "lastVerified": "2026-06-02"
     },
     {
       "id": "regal_cinemas_chicago",
@@ -972,7 +972,7 @@
       "requiresVeteranId": true,
       "phoneNumber": null,
       "website": "https://www.regmovies.com/",
-      "lastVerified": "2026-06-01"
+      "lastVerified": "2026-06-02"
     },
     {
       "id": "cinemark_chicago",
@@ -990,7 +990,7 @@
       "requiresVeteranId": true,
       "phoneNumber": null,
       "website": "https://www.cinemark.com/",
-      "lastVerified": "2026-06-01"
+      "lastVerified": "2026-06-02"
     },
     {
       "id": "topgolf_chicago",
@@ -1008,7 +1008,7 @@
       "requiresVeteranId": true,
       "phoneNumber": null,
       "website": "https://topgolf.com/",
-      "lastVerified": "2026-06-01"
+      "lastVerified": "2026-06-02"
     },
     {
       "id": "jiffy_lube_chicago",
@@ -1026,7 +1026,7 @@
       "requiresVeteranId": true,
       "phoneNumber": null,
       "website": "https://www.jiffylube.com/",
-      "lastVerified": "2026-06-01"
+      "lastVerified": "2026-06-02"
     },
     {
       "id": "midas_chicago",
@@ -1044,7 +1044,7 @@
       "requiresVeteranId": true,
       "phoneNumber": null,
       "website": "https://www.midas.com/",
-      "lastVerified": "2026-06-01"
+      "lastVerified": "2026-06-02"
     },
     {
       "id": "goodyear_auto_service_chicago",
@@ -1062,7 +1062,7 @@
       "requiresVeteranId": true,
       "phoneNumber": null,
       "website": "https://www.goodyearautoservice.com/",
-      "lastVerified": "2026-06-01"
+      "lastVerified": "2026-06-02"
     },
     {
       "id": "enterprise_rent-a-car_chicago",
@@ -1080,7 +1080,7 @@
       "requiresVeteranId": true,
       "phoneNumber": null,
       "website": "https://www.enterprise.com/en/car-rental/deals/military-discount.html",
-      "lastVerified": "2026-06-01"
+      "lastVerified": "2026-06-02"
     },
     {
       "id": "applebees_houston",
@@ -1098,7 +1098,7 @@
       "requiresVeteranId": true,
       "phoneNumber": null,
       "website": "https://www.applebees.com/",
-      "lastVerified": "2026-06-01"
+      "lastVerified": "2026-06-02"
     },
     {
       "id": "chilis_houston",
@@ -1116,7 +1116,7 @@
       "requiresVeteranId": true,
       "phoneNumber": null,
       "website": "https://www.chilis.com/",
-      "lastVerified": "2026-06-01"
+      "lastVerified": "2026-06-02"
     },
     {
       "id": "dennys_houston",
@@ -1134,7 +1134,7 @@
       "requiresVeteranId": true,
       "phoneNumber": null,
       "website": "https://www.dennys.com/",
-      "lastVerified": "2026-06-01"
+      "lastVerified": "2026-06-02"
     },
     {
       "id": "buffalo_wild_wings_houston",
@@ -1152,7 +1152,7 @@
       "requiresVeteranId": true,
       "phoneNumber": null,
       "website": "https://www.buffalowildwings.com/",
-      "lastVerified": "2026-06-01"
+      "lastVerified": "2026-06-02"
     },
     {
       "id": "home_depot_houston",
@@ -1170,7 +1170,7 @@
       "requiresVeteranId": true,
       "phoneNumber": null,
       "website": "https://www.homedepot.com/c/Pro_MilitaryDiscount",
-      "lastVerified": "2026-06-01"
+      "lastVerified": "2026-06-02"
     },
     {
       "id": "lowes_houston",
@@ -1188,7 +1188,7 @@
       "requiresVeteranId": true,
       "phoneNumber": null,
       "website": "https://www.lowes.com/l/military-discount.html",
-      "lastVerified": "2026-06-01"
+      "lastVerified": "2026-06-02"
     },
     {
       "id": "target_houston",
@@ -1206,7 +1206,7 @@
       "requiresVeteranId": true,
       "phoneNumber": null,
       "website": "https://www.target.com/c/military-discount",
-      "lastVerified": "2026-06-01"
+      "lastVerified": "2026-06-02"
     },
     {
       "id": "best_buy_houston",
@@ -1224,7 +1224,7 @@
       "requiresVeteranId": true,
       "phoneNumber": null,
       "website": "https://www.bestbuy.com/site/electronics/military-and-veteran-offers/",
-      "lastVerified": "2026-06-01"
+      "lastVerified": "2026-06-02"
     },
     {
       "id": "marriott_houston",
@@ -1242,7 +1242,7 @@
       "requiresVeteranId": true,
       "phoneNumber": null,
       "website": "https://www.marriott.com/",
-      "lastVerified": "2026-06-01"
+      "lastVerified": "2026-06-02"
     },
     {
       "id": "hilton_houston",
@@ -1260,7 +1260,7 @@
       "requiresVeteranId": true,
       "phoneNumber": null,
       "website": "https://www.hilton.com/",
-      "lastVerified": "2026-06-01"
+      "lastVerified": "2026-06-02"
     },
     {
       "id": "ihg_houston",
@@ -1278,7 +1278,7 @@
       "requiresVeteranId": true,
       "phoneNumber": null,
       "website": "https://www.ihg.com/",
-      "lastVerified": "2026-06-01"
+      "lastVerified": "2026-06-02"
     },
     {
       "id": "wyndham_houston",
@@ -1296,7 +1296,7 @@
       "requiresVeteranId": true,
       "phoneNumber": null,
       "website": "https://www.wyndhamhotels.com/",
-      "lastVerified": "2026-06-01"
+      "lastVerified": "2026-06-02"
     },
     {
       "id": "amc_theatres_houston",
@@ -1314,7 +1314,7 @@
       "requiresVeteranId": true,
       "phoneNumber": null,
       "website": "https://www.amctheatres.com/",
-      "lastVerified": "2026-06-01"
+      "lastVerified": "2026-06-02"
     },
     {
       "id": "regal_cinemas_houston",
@@ -1332,7 +1332,7 @@
       "requiresVeteranId": true,
       "phoneNumber": null,
       "website": "https://www.regmovies.com/",
-      "lastVerified": "2026-06-01"
+      "lastVerified": "2026-06-02"
     },
     {
       "id": "cinemark_houston",
@@ -1350,7 +1350,7 @@
       "requiresVeteranId": true,
       "phoneNumber": null,
       "website": "https://www.cinemark.com/",
-      "lastVerified": "2026-06-01"
+      "lastVerified": "2026-06-02"
     },
     {
       "id": "topgolf_houston",
@@ -1368,7 +1368,7 @@
       "requiresVeteranId": true,
       "phoneNumber": null,
       "website": "https://topgolf.com/",
-      "lastVerified": "2026-06-01"
+      "lastVerified": "2026-06-02"
     },
     {
       "id": "jiffy_lube_houston",
@@ -1386,7 +1386,7 @@
       "requiresVeteranId": true,
       "phoneNumber": null,
       "website": "https://www.jiffylube.com/",
-      "lastVerified": "2026-06-01"
+      "lastVerified": "2026-06-02"
     },
     {
       "id": "midas_houston",
@@ -1404,7 +1404,7 @@
       "requiresVeteranId": true,
       "phoneNumber": null,
       "website": "https://www.midas.com/",
-      "lastVerified": "2026-06-01"
+      "lastVerified": "2026-06-02"
     },
     {
       "id": "goodyear_auto_service_houston",
@@ -1422,7 +1422,7 @@
       "requiresVeteranId": true,
       "phoneNumber": null,
       "website": "https://www.goodyearautoservice.com/",
-      "lastVerified": "2026-06-01"
+      "lastVerified": "2026-06-02"
     },
     {
       "id": "enterprise_rent-a-car_houston",
@@ -1440,7 +1440,7 @@
       "requiresVeteranId": true,
       "phoneNumber": null,
       "website": "https://www.enterprise.com/en/car-rental/deals/military-discount.html",
-      "lastVerified": "2026-06-01"
+      "lastVerified": "2026-06-02"
     },
     {
       "id": "applebees_atlanta",
@@ -1458,7 +1458,7 @@
       "requiresVeteranId": true,
       "phoneNumber": null,
       "website": "https://www.applebees.com/",
-      "lastVerified": "2026-06-01"
+      "lastVerified": "2026-06-02"
     },
     {
       "id": "chilis_atlanta",
@@ -1476,7 +1476,7 @@
       "requiresVeteranId": true,
       "phoneNumber": null,
       "website": "https://www.chilis.com/",
-      "lastVerified": "2026-06-01"
+      "lastVerified": "2026-06-02"
     },
     {
       "id": "dennys_atlanta",
@@ -1494,7 +1494,7 @@
       "requiresVeteranId": true,
       "phoneNumber": null,
       "website": "https://www.dennys.com/",
-      "lastVerified": "2026-06-01"
+      "lastVerified": "2026-06-02"
     },
     {
       "id": "buffalo_wild_wings_atlanta",
@@ -1512,7 +1512,7 @@
       "requiresVeteranId": true,
       "phoneNumber": null,
       "website": "https://www.buffalowildwings.com/",
-      "lastVerified": "2026-06-01"
+      "lastVerified": "2026-06-02"
     },
     {
       "id": "home_depot_atlanta",
@@ -1530,7 +1530,7 @@
       "requiresVeteranId": true,
       "phoneNumber": null,
       "website": "https://www.homedepot.com/c/Pro_MilitaryDiscount",
-      "lastVerified": "2026-06-01"
+      "lastVerified": "2026-06-02"
     },
     {
       "id": "lowes_atlanta",
@@ -1548,7 +1548,7 @@
       "requiresVeteranId": true,
       "phoneNumber": null,
       "website": "https://www.lowes.com/l/military-discount.html",
-      "lastVerified": "2026-06-01"
+      "lastVerified": "2026-06-02"
     },
     {
       "id": "target_atlanta",
@@ -1566,7 +1566,7 @@
       "requiresVeteranId": true,
       "phoneNumber": null,
       "website": "https://www.target.com/c/military-discount",
-      "lastVerified": "2026-06-01"
+      "lastVerified": "2026-06-02"
     },
     {
       "id": "best_buy_atlanta",
@@ -1584,7 +1584,7 @@
       "requiresVeteranId": true,
       "phoneNumber": null,
       "website": "https://www.bestbuy.com/site/electronics/military-and-veteran-offers/",
-      "lastVerified": "2026-06-01"
+      "lastVerified": "2026-06-02"
     },
     {
       "id": "marriott_atlanta",
@@ -1602,7 +1602,7 @@
       "requiresVeteranId": true,
       "phoneNumber": null,
       "website": "https://www.marriott.com/",
-      "lastVerified": "2026-06-01"
+      "lastVerified": "2026-06-02"
     },
     {
       "id": "hilton_atlanta",
@@ -1620,7 +1620,7 @@
       "requiresVeteranId": true,
       "phoneNumber": null,
       "website": "https://www.hilton.com/",
-      "lastVerified": "2026-06-01"
+      "lastVerified": "2026-06-02"
     },
     {
       "id": "ihg_atlanta",
@@ -1638,7 +1638,7 @@
       "requiresVeteranId": true,
       "phoneNumber": null,
       "website": "https://www.ihg.com/",
-      "lastVerified": "2026-06-01"
+      "lastVerified": "2026-06-02"
     },
     {
       "id": "wyndham_atlanta",
@@ -1656,7 +1656,7 @@
       "requiresVeteranId": true,
       "phoneNumber": null,
       "website": "https://www.wyndhamhotels.com/",
-      "lastVerified": "2026-06-01"
+      "lastVerified": "2026-06-02"
     },
     {
       "id": "amc_theatres_atlanta",
@@ -1674,7 +1674,7 @@
       "requiresVeteranId": true,
       "phoneNumber": null,
       "website": "https://www.amctheatres.com/",
-      "lastVerified": "2026-06-01"
+      "lastVerified": "2026-06-02"
     },
     {
       "id": "regal_cinemas_atlanta",
@@ -1692,7 +1692,7 @@
       "requiresVeteranId": true,
       "phoneNumber": null,
       "website": "https://www.regmovies.com/",
-      "lastVerified": "2026-06-01"
+      "lastVerified": "2026-06-02"
     },
     {
       "id": "cinemark_atlanta",
@@ -1710,7 +1710,7 @@
       "requiresVeteranId": true,
       "phoneNumber": null,
       "website": "https://www.cinemark.com/",
-      "lastVerified": "2026-06-01"
+      "lastVerified": "2026-06-02"
     },
     {
       "id": "topgolf_atlanta",
@@ -1728,7 +1728,7 @@
       "requiresVeteranId": true,
       "phoneNumber": null,
       "website": "https://topgolf.com/",
-      "lastVerified": "2026-06-01"
+      "lastVerified": "2026-06-02"
     },
     {
       "id": "jiffy_lube_atlanta",
@@ -1746,7 +1746,7 @@
       "requiresVeteranId": true,
       "phoneNumber": null,
       "website": "https://www.jiffylube.com/",
-      "lastVerified": "2026-06-01"
+      "lastVerified": "2026-06-02"
     },
     {
       "id": "midas_atlanta",
@@ -1764,7 +1764,7 @@
       "requiresVeteranId": true,
       "phoneNumber": null,
       "website": "https://www.midas.com/",
-      "lastVerified": "2026-06-01"
+      "lastVerified": "2026-06-02"
     },
     {
       "id": "goodyear_auto_service_atlanta",
@@ -1782,7 +1782,7 @@
       "requiresVeteranId": true,
       "phoneNumber": null,
       "website": "https://www.goodyearautoservice.com/",
-      "lastVerified": "2026-06-01"
+      "lastVerified": "2026-06-02"
     },
     {
       "id": "enterprise_rent-a-car_atlanta",
@@ -1800,7 +1800,7 @@
       "requiresVeteranId": true,
       "phoneNumber": null,
       "website": "https://www.enterprise.com/en/car-rental/deals/military-discount.html",
-      "lastVerified": "2026-06-01"
+      "lastVerified": "2026-06-02"
     }
   ]
 }
