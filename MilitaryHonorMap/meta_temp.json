@@ -1,9 +1,9 @@
 {
-  "lastUpdated": "2026-07-05T14:40:27.977Z",
-  "version": "20260705_144027",
-  "source": "병무청 예우시설 목록 + 국군복지단 영외마트 운영 현황",
+  "lastUpdated": "2025-08-13T11:15:14.511Z",
+  "version": "20250813_111514",
+  "source": "병무청 예우시설 목록",
   "updateReason": "Data content changed",
-  "facilitiesCount": 1853,
+  "facilitiesCount": 1735,
   "categories": [
   "ACCOMMODATION",
   "CULTURE",
@@ -18,7 +18,6 @@
   "OTHER",
   "PALACE_HERITAGE",
   "PARKING",
-  "PX",
   "RESTAURANT",
   "TOURIST_SPOT"
 ]
