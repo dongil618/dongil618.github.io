@@ -23641,7 +23641,7 @@
     "bathRoomCount": 0,
     "permitDate": "1983-08-24",
     "closedDate": null,
-    "updatedAt": "2026-03-10 21:32:01",
+    "updatedAt": "2026-07-11 21:26:35",
     "localGovernmentCode": "3860000",
     "source": "행정안전부_생활_목욕장업 조회서비스"
   },
@@ -58417,7 +58417,7 @@
     "bathRoomCount": 0,
     "permitDate": "1980-12-13",
     "closedDate": null,
-    "updatedAt": "2026-03-10 21:32:00",
+    "updatedAt": "2026-07-11 21:26:35",
     "localGovernmentCode": "3860000",
     "source": "행정안전부_생활_목욕장업 조회서비스"
   },
@@ -65347,7 +65347,7 @@
     "bathRoomCount": 0,
     "permitDate": "2026-07-06",
     "closedDate": null,
-    "updatedAt": "2026-07-07 10:07:40",
+    "updatedAt": "2026-07-11 21:56:35",
     "localGovernmentCode": "5110000",
     "source": "행정안전부_생활_목욕장업 조회서비스"
   },
@@ -70408,7 +70408,7 @@
     "bathRoomCount": 0,
     "permitDate": "2006-11-02",
     "closedDate": null,
-    "updatedAt": "2026-04-16 03:03:03",
+    "updatedAt": "2026-07-11 21:26:35",
     "localGovernmentCode": "4281000",
     "source": "행정안전부_생활_목욕장업 조회서비스"
   },
@@ -72951,27 +72951,6 @@
     "closedDate": null,
     "updatedAt": "2026-06-09 03:03:03",
     "localGovernmentCode": "5310000",
-    "source": "행정안전부_생활_목욕장업 조회서비스"
-  },
-  {
-    "id": "3220000-202-1978-00207",
-    "name": "이조한증막",
-    "type": "localBath",
-    "latitude": 37.5330267,
-    "longitude": 127.0279256,
-    "address": "서울특별시 강남구 압구정로29길 71 (압구정동,,B상가)",
-    "roadAddress": "서울특별시 강남구 압구정로29길 71 (압구정동,,B상가)",
-    "lotAddress": "서울특별시 강남구 압구정동 369-1 ,B상가",
-    "phone": "02-543-9694",
-    "statusCode": "01",
-    "status": "영업/정상",
-    "detailStatus": "영업",
-    "hasSweatRoom": false,
-    "bathRoomCount": null,
-    "permitDate": "1978-06-28",
-    "closedDate": null,
-    "updatedAt": "2025-12-15 16:15:28",
-    "localGovernmentCode": "3220000",
     "source": "행정안전부_생활_목욕장업 조회서비스"
   },
   {
