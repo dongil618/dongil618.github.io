@@ -6,7 +6,7 @@ const weekdays = [
   ["thursday", "목"], ["friday", "금"], ["saturday", "토"], ["sunday", "일"],
 ];
 
-const state = { places: [], details: new Map(), entries: new Map(), selected: null };
+const state = { places: [], visiblePlaces: [], details: new Map(), entries: new Map(), selected: null };
 const $ = (selector, root = document) => root.querySelector(selector);
 const $$ = (selector, root = document) => [...root.querySelectorAll(selector)];
 
@@ -48,6 +48,133 @@ function syncDayRow(row) {
   }
 }
 
+const koreanDays = ["월", "화", "수", "목", "금", "토", "일"];
+function dayTargets(text) {
+  if (/평일/.test(text)) return weekdays.slice(0, 5).map(([key]) => key);
+  if (/주말/.test(text)) return weekdays.slice(5).map(([key]) => key);
+  if (/매일|매일같이|연중무휴/.test(text)) return weekdays.map(([key]) => key);
+  const range = text.match(/([월화수목금토일])(?:요일)?\s*[-~–]\s*([월화수목금토일])(?:요일)?/);
+  if (range) {
+    const start = koreanDays.indexOf(range[1]);
+    const end = koreanDays.indexOf(range[2]);
+    const result = [];
+    for (let index = start; ; index = (index + 1) % 7) {
+      result.push(weekdays[index][0]);
+      if (index === end) return result;
+    }
+  }
+  return [...new Set([...text.matchAll(/([월화수목금토일])(?:요일)?/g)].map((match) => weekdays[koreanDays.indexOf(match[1])][0]))];
+}
+
+function normalizeKoreanTimes(text) {
+  return text.replace(/(오전|오후)\s*(\d{1,2}):(\d{2})/g, (_, meridiem, rawHour, minute) => {
+    let hour = Number(rawHour) % 12;
+    if (meridiem === "오후") hour += 12;
+    return `${String(hour).padStart(2, "0")}:${minute}`;
+  });
+}
+
+function timePair(text) {
+  const values = [...normalizeKoreanTimes(text).matchAll(/(?:^|\D)([01]?\d|2[0-3]):([0-5]\d)(?!\d)/g)]
+    .map((match) => `${match[1].padStart(2, "0")}:${match[2]}`);
+  return values.length >= 2 ? values.slice(0, 2) : null;
+}
+
+function setDay(day, values) {
+  const row = $(`tr[data-day='${day}']`);
+  if (!row) return;
+  $("[data-field='status']", row).value = values.status;
+  $("[data-field='allDay']", row).checked = Boolean(values.allDay);
+  for (const field of ["open", "close", "breakOpen", "breakClose"]) {
+    if (Object.hasOwn(values, field)) $(`[data-field='${field}']`, row).value = values[field] || "";
+  }
+  if (values.status !== "open" || values.allDay) {
+    $("[data-field='open']", row).value = "";
+    $("[data-field='close']", row).value = "";
+    if (values.status !== "open") {
+      $("[data-field='breakOpen']", row).value = "";
+      $("[data-field='breakClose']", row).value = "";
+    }
+  }
+  syncDayRow(row);
+}
+
+function setParseResult(selector, message, error = false) {
+  const node = $(selector);
+  node.textContent = message;
+  node.classList.toggle("error", error);
+  node.hidden = false;
+}
+
+function parseRegularClosure(line) {
+  if (!/(?:매월|매달)/.test(line) || !/휴무/.test(line)) return false;
+  const match = line.match(/(첫째|둘째|셋째|넷째|다섯째|마지막|[1-5](?:번째|째))\s*([월화수목금토일])(?:요일)?/);
+  if (!match) return false;
+  const ordinalMap = { 첫째: 1, 둘째: 2, 셋째: 3, 넷째: 4, 다섯째: 5 };
+  $("#closureKind").value = match[1] === "마지막" ? "lastWeekday" : "nthWeekday";
+  $("#closureWeekday").value = weekdays[koreanDays.indexOf(match[2])][0];
+  $("#closureOrdinal").value = match[1] === "마지막" ? "" : ordinalMap[match[1]] || Number(match[1][0]);
+  $("#closureLabel").value = line.trim();
+  return true;
+}
+
+function parseHoursText() {
+  const text = $("#hoursPaste").value.trim();
+  if (!text) return setParseResult("#hoursPasteResult", "붙여넣을 영업시간이 없습니다.", true);
+  const lines = text.split(/\n+/).map((line) => line.trim()).filter(Boolean);
+  let currentDays = [];
+  let appliedDays = new Set();
+  let breaks = 0;
+  let closures = 0;
+  for (const line of lines) {
+    if (parseRegularClosure(line)) { closures += 1; continue; }
+    const parsedDays = dayTargets(line);
+    if (parsedDays.length) currentDays = parsedDays;
+    const targets = parsedDays.length ? parsedDays : currentDays;
+    if (!targets.length) continue;
+    if (/휴게|브레이크/.test(line)) {
+      const pair = timePair(line);
+      if (pair) {
+        for (const day of targets) setDay(day, { status: "open", breakOpen: pair[0], breakClose: pair[1] });
+        breaks += targets.length;
+      }
+      continue;
+    }
+    if (/휴무/.test(line)) {
+      for (const day of targets) { setDay(day, { status: "closed" }); appliedDays.add(day); }
+      continue;
+    }
+    if (/24\s*시간|연중무휴/.test(line)) {
+      for (const day of targets) { setDay(day, { status: "open", allDay: true }); appliedDays.add(day); }
+      continue;
+    }
+    const pair = timePair(line);
+    if (pair) {
+      for (const day of targets) {
+        setDay(day, { status: "open", allDay: false, open: pair[0], close: pair[1], breakOpen: "", breakClose: "" });
+        appliedDays.add(day);
+      }
+    }
+  }
+  if (!appliedDays.size && !closures) return setParseResult("#hoursPasteResult", "요일과 시간을 인식하지 못했습니다. ‘월-금 06:00-23:00’처럼 붙여넣어 주세요.", true);
+  setParseResult("#hoursPasteResult", `${appliedDays.size}개 요일 반영${breaks ? ` · 휴게시간 ${breaks}개` : ""}${closures ? ` · 정기휴무 ${closures}개` : ""}`);
+}
+
+function copyMondayTo(targetDays) {
+  const monday = $("tr[data-day='monday']");
+  const values = {
+    status: $("[data-field='status']", monday).value,
+    allDay: $("[data-field='allDay']", monday).checked,
+    open: $("[data-field='open']", monday).value,
+    close: $("[data-field='close']", monday).value,
+    breakOpen: $("[data-field='breakOpen']", monday).value,
+    breakClose: $("[data-field='breakClose']", monday).value,
+  };
+  if (values.status === "unknown") return setParseResult("#hoursPasteResult", "먼저 월요일 영업시간을 입력하세요.", true);
+  for (const day of targetDays) setDay(day, values);
+  setParseResult("#hoursPasteResult", `월요일 설정을 ${targetDays.length}개 요일에 적용했습니다.`);
+}
+
 function addRepeater(templateId, containerId, data = {}) {
   const fragment = document.importNode($(templateId).content, true);
   const row = fragment.firstElementChild;
@@ -84,9 +211,10 @@ function renderSearch(query) {
     if (!normalized) return true;
     return `${place.name} ${place.address} ${place.phone || ""}`.toLowerCase().includes(normalized);
   }).slice(0, 60);
+  state.visiblePlaces = matches;
   $("#searchResults").innerHTML = matches.map((place) => `
     <button type="button" class="search-result ${state.selected?.id === place.id ? "active" : ""}" data-id="${escapeText(place.id)}" role="option">
-      <strong>${escapeText(place.name)}</strong><small>${escapeText(place.address)} · ${escapeText(place.phone || "전화 없음")}</small>
+      <strong>${escapeText(place.name)}${state.entries.has(place.id) ? '<span class="saved-mark">저장됨</span>' : ""}</strong><small>${escapeText(place.address)} · ${escapeText(place.phone || "전화 없음")}</small>
     </button>`).join("");
   for (const button of $$(".search-result")) button.addEventListener("click", () => selectPlace(button.dataset.id));
 }
@@ -117,6 +245,10 @@ function detailToEntry(detail) {
 }
 
 function fillForm(entry) {
+  $("#hoursPaste").value = "";
+  $("#pricesPaste").value = "";
+  $("#hoursPasteResult").hidden = true;
+  $("#pricesPasteResult").hidden = true;
   $("#sourceKind").value = entry.source?.kind || "community";
   $("#sourceName").value = entry.source?.name || "관리자 직접 확인";
   $("#sourceUrl").value = entry.source?.url || "";
@@ -254,6 +386,67 @@ function normalizeNaverSearchName(name) {
     .replace(/^\s*(?:(?:\((?:유|주)\)|㈜|주식회사|유한회사)\s*)+/u, "")
     .trim();
 }
+
+function classifyPriceLabel(label) {
+  const compact = label.replace(/\s/g, "");
+  const audience = /유아|36개월|3세미만/.test(compact) ? "infant"
+    : /경로|노인|65세/.test(compact) ? "senior"
+    : /청소년|중고생|학생/.test(compact) ? "youth"
+    : /소인|어린이|아동|미취학|7세|6세/.test(compact) ? "child"
+    : /대인|성인/.test(compact) ? "adult" : "all";
+  const service = /찜질/.test(compact) && !/찜질복/.test(compact) ? "jjimjil"
+    : /사우나/.test(compact) ? "sauna"
+    : /숙박|심야입장/.test(compact) ? "overnight"
+    : /대여|찜질복|수건/.test(compact) ? "rental"
+    : /회원권|목욕권|월목욕|개월|\d+매|카드/.test(compact) ? "package"
+    : /세신/.test(compact) ? "other" : "bath";
+  const timeBand = /야간|심야/.test(compact) ? "nighttime"
+    : /주말/.test(compact) ? "weekend"
+    : /평일/.test(compact) ? "weekday"
+    : /공휴일/.test(compact) ? "holiday"
+    : /주간/.test(compact) ? "daytime" : "standard";
+  return { audience, service, timeBand };
+}
+
+function parsePricesText() {
+  const lines = $("#pricesPaste").value.split(/\n+/).map((line) => line.trim()).filter(Boolean);
+  let added = 0;
+  const rejected = [];
+  for (const line of lines) {
+    const matches = [...line.matchAll(/\d[\d,]*/g)];
+    if (!matches.length) { rejected.push(line); continue; }
+    const amountToken = matches.at(-1)[0];
+    const amount = Number(amountToken.replace(/,/g, ""));
+    if (!Number.isInteger(amount) || amount < 0 || amount > 1000000) { rejected.push(line); continue; }
+    const label = line.slice(0, matches.at(-1).index).replace(/[·:\-]\s*$/, "").trim() || "입장료";
+    addRepeater("#priceTemplate", "#prices", { label, amount, conditions: "", ...classifyPriceLabel(label) });
+    added += 1;
+  }
+  if (!added) return setParseResult("#pricesPasteResult", "가격을 인식하지 못했습니다. ‘대인 10,000원’처럼 한 줄씩 입력하세요.", true);
+  setParseResult("#pricesPasteResult", `${added}개 가격 반영${rejected.length ? ` · 미인식 ${rejected.length}줄` : ""}`, Boolean(rejected.length));
+}
+
+function saveSelected() {
+  try {
+    const entry = serializeForm();
+    state.entries.set(entry.saunaId, entry);
+    persist();
+    $("#validationBox").hidden = true;
+    renderSearch($("#placeSearch").value);
+    return true;
+  } catch (error) {
+    showError(error);
+    return false;
+  }
+}
+
+function selectNextVisible() {
+  if (!state.selected || !state.visiblePlaces.length) return;
+  const current = state.visiblePlaces.findIndex((place) => place.id === state.selected.id);
+  const ordered = [...state.visiblePlaces.slice(current + 1), ...state.visiblePlaces.slice(0, current + 1)];
+  const next = ordered.find((place) => !state.entries.has(place.id)) || ordered[0];
+  if (next) selectPlace(next.id);
+}
 function updateReference() {
   const query = normalizeNaverSearchName(state.selected.name);
   const mapUrl = `https://map.naver.com/p/search/${encodeURIComponent(query)}`;
@@ -262,13 +455,18 @@ function updateReference() {
 }
 
 $("#placeSearch").addEventListener("input", (event) => renderSearch(event.target.value));
+$("#parseHours").addEventListener("click", parseHoursText);
+$("#fillWeekdays").addEventListener("click", () => copyMondayTo(weekdays.slice(0, 5).map(([key]) => key)));
+$("#fillEveryday").addEventListener("click", () => copyMondayTo(weekdays.map(([key]) => key)));
 $("#addException").addEventListener("click", () => addRepeater("#exceptionTemplate", "#exceptions"));
 $("#addPrice").addEventListener("click", () => addRepeater("#priceTemplate", "#prices"));
+$("#parsePrices").addEventListener("click", parsePricesText);
+$("#clearPrices").addEventListener("click", () => { $("#prices").innerHTML = ""; setParseResult("#pricesPasteResult", "기존 가격을 비웠습니다."); });
 $("#detailForm").addEventListener("submit", (event) => {
   event.preventDefault();
-  try { const entry = serializeForm(); state.entries.set(entry.saunaId, entry); persist(); $("#validationBox").hidden = true; }
-  catch (error) { showError(error); }
+  saveSelected();
 });
+$("#saveNextButton").addEventListener("click", () => { if (saveSelected()) selectNextVisible(); });
 $("#copyButton").addEventListener("click", async () => { try { await navigator.clipboard.writeText(JSON.stringify(serializeForm(), null, 2)); setStatus("선택 JSON을 복사했습니다"); } catch (error) { showError(error); } });
 $("#resetButton").addEventListener("click", () => { if (!state.selected) return; state.entries.delete(state.selected.id); persist(); fillForm(detailToEntry(state.details.get(state.selected.id)) || emptyEntry(state.selected.id)); });
 $("#exportButton").addEventListener("click", () => downloadJson("sauna_details.raw.json", [...state.entries.values()].sort((a, b) => a.saunaId.localeCompare(b.saunaId))));
@@ -276,6 +474,16 @@ $("#importFile").addEventListener("change", async (event) => {
   try { const value = JSON.parse(await event.target.files[0].text()); if (!Array.isArray(value)) throw new Error("JSON 최상위 값은 배열이어야 합니다."); state.entries = new Map(value.map((entry) => { if (!entry.saunaId) throw new Error("saunaId가 없는 항목이 있습니다."); return [entry.saunaId, entry]; })); persist(); if (state.selected) fillForm(state.entries.get(state.selected.id) || emptyEntry(state.selected.id)); }
   catch (error) { showError(error); }
   event.target.value = "";
+});
+$("#toggleReference").addEventListener("click", () => {
+  const expanded = document.body.classList.toggle("reference-expanded");
+  $("#toggleReference").textContent = expanded ? "편집 넓게" : "참고 크게";
+});
+document.addEventListener("keydown", (event) => {
+  if ((event.metaKey || event.ctrlKey) && event.key.toLowerCase() === "s") {
+    event.preventDefault();
+    saveSelected();
+  }
 });
 
 buildWeeklyRows();

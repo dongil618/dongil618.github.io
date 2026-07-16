@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="color-scheme" content="light">
     <title>사우나 상세정보 편집기</title>
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./styles.css?v=20260717-2">
   </head>
   <body>
     <header class="topbar">
@@ -67,6 +67,26 @@
               <div><span>02</span><h3>주간 영업시간</h3></div>
               <p>미확인과 휴무를 반드시 구분합니다. 종료가 시작보다 빠르면 익일 종료입니다.</p>
             </div>
+            <div class="paste-panel">
+              <div class="paste-heading">
+                <div>
+                  <strong>영업시간 한 번에 붙여넣기</strong>
+                  <span>네이버 지도에서 요일별 영업시간을 복사해 그대로 붙여넣으세요.</span>
+                </div>
+                <div class="inline-actions">
+                  <button id="fillWeekdays" class="button compact secondary" type="button">월요일 시간 → 평일</button>
+                  <button id="fillEveryday" class="button compact secondary" type="button">월요일 시간 → 매일</button>
+                  <button id="parseHours" class="button compact primary" type="button">붙여넣기 반영</button>
+                </div>
+              </div>
+              <textarea id="hoursPaste" rows="6" placeholder="예시 1)
+월-금 06:00-23:00
+토 24시간
+일 휴무
+
+예시 2) 네이버에서 복사한 여러 줄 텍스트를 그대로 붙여넣기"></textarea>
+              <div id="hoursPasteResult" class="parse-result" hidden></div>
+            </div>
             <div class="hours-table-wrap">
               <table class="hours-table">
                 <thead><tr><th>요일</th><th>상태</th><th>24시간</th><th>시작</th><th>종료</th><th>휴게 시작</th><th>휴게 종료</th></tr></thead>
@@ -112,6 +132,17 @@
               <div><span>04</span><h3>가격</h3></div>
               <button id="addPrice" class="text-button" type="button">+ 가격 추가</button>
             </div>
+            <div class="paste-panel price-paste-panel">
+              <div class="paste-heading">
+                <div><strong>가격 한 번에 붙여넣기</strong><span>한 줄에 한 항목씩 입력하면 대상과 서비스 유형을 자동 분류합니다.</span></div>
+                <div class="inline-actions">
+                  <button id="clearPrices" class="button compact secondary" type="button">기존 가격 비우기</button>
+                  <button id="parsePrices" class="button compact primary" type="button">가격 반영</button>
+                </div>
+              </div>
+              <textarea id="pricesPaste" rows="4" placeholder="대인 10,000원&#10;소인 7,000원&#10;찜질복 3,000원"></textarea>
+              <div id="pricesPasteResult" class="parse-result" hidden></div>
+            </div>
             <div id="prices" class="repeater"></div>
           </section>
 
@@ -119,6 +150,7 @@
           <footer class="form-actions">
             <button id="resetButton" class="button secondary" type="button">선택 업소 되돌리기</button>
             <button id="copyButton" class="button secondary" type="button">선택 JSON 복사</button>
+            <button id="saveNextButton" class="button secondary" type="button">저장 후 다음</button>
             <button class="button primary" type="submit">브라우저에 저장</button>
           </footer>
         </form>
@@ -128,6 +160,7 @@
         <div class="reference-header">
           <div><p class="eyebrow">REFERENCE</p><h2>네이버 지도 참고</h2></div>
           <div class="reference-actions">
+            <button id="toggleReference" class="button secondary" type="button">참고 크게</button>
             <a id="naverMapLink" class="button primary" href="https://map.naver.com" target="_blank" rel="noopener noreferrer">새 탭에서 지도</a>
             <a id="naverBlogLink" class="button secondary" href="https://search.naver.com" target="_blank" rel="noopener noreferrer">블로그 검색</a>
           </div>
@@ -160,6 +193,6 @@
       </div>
     </template>
 
-    <script src="./app.js" defer></script>
+    <script src="./app.js?v=20260717-2" defer></script>
   </body>
 </html>
