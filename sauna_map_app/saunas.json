@@ -22302,27 +22302,6 @@
     "source": "행정안전부_생활_목욕장업 조회서비스"
   },
   {
-    "id": "3220000-202-2019-00002",
-    "name": "대치고운여성전용 한증막",
-    "type": "jjimjilbang",
-    "latitude": 37.5007018,
-    "longitude": 127.0631944,
-    "address": "서울특별시 강남구 삼성로64길 35, 지하1층 (대치동)",
-    "roadAddress": "서울특별시 강남구 삼성로64길 35, 지하1층 (대치동)",
-    "lotAddress": "서울특별시 강남구 대치동 976-7",
-    "phone": "",
-    "statusCode": "01",
-    "status": "영업/정상",
-    "detailStatus": "영업",
-    "hasSweatRoom": true,
-    "bathRoomCount": 1,
-    "permitDate": "2019-04-10",
-    "closedDate": null,
-    "updatedAt": "2025-12-15 16:15:28",
-    "localGovernmentCode": "3220000",
-    "source": "행정안전부_생활_목욕장업 조회서비스"
-  },
-  {
     "id": "3280000-202-1987-00034",
     "name": "대평탕",
     "type": "jjimjilbang",
@@ -56191,7 +56170,7 @@
     "bathRoomCount": 2,
     "permitDate": "2025-05-09",
     "closedDate": null,
-    "updatedAt": "2026-05-10 22:00:24",
+    "updatedAt": "2026-07-15 22:00:19",
     "localGovernmentCode": "3910000",
     "source": "행정안전부_생활_목욕장업 조회서비스"
   },
@@ -59262,6 +59241,27 @@
     "source": "행정안전부_생활_목욕장업 조회서비스"
   },
   {
+    "id": "3220000-202-2019-00002",
+    "name": "시원 여성전용 불한증막",
+    "type": "jjimjilbang",
+    "latitude": 37.5007018,
+    "longitude": 127.0631944,
+    "address": "서울특별시 강남구 삼성로64길 35, 지하1층 (대치동)",
+    "roadAddress": "서울특별시 강남구 삼성로64길 35, 지하1층 (대치동)",
+    "lotAddress": "서울특별시 강남구 대치동 976-7",
+    "phone": "",
+    "statusCode": "01",
+    "status": "영업/정상",
+    "detailStatus": "영업",
+    "hasSweatRoom": true,
+    "bathRoomCount": 1,
+    "permitDate": "2019-04-10",
+    "closedDate": null,
+    "updatedAt": "2026-07-15 22:26:37",
+    "localGovernmentCode": "3220000",
+    "source": "행정안전부_생활_목욕장업 조회서비스"
+  },
+  {
     "id": "3460000-202-1996-00001",
     "name": "시원청",
     "type": "localBath",
@@ -59950,7 +59950,7 @@
     "bathRoomCount": 0,
     "permitDate": "2001-11-22",
     "closedDate": null,
-    "updatedAt": "2026-03-10 21:32:33",
+    "updatedAt": "2026-07-15 21:26:35",
     "localGovernmentCode": "3860000",
     "source": "행정안전부_생활_목욕장업 조회서비스"
   },
@@ -73852,7 +73852,7 @@
     "bathRoomCount": null,
     "permitDate": "2003-03-21",
     "closedDate": null,
-    "updatedAt": "2025-12-15 16:15:28",
+    "updatedAt": "2026-07-15 22:56:35",
     "localGovernmentCode": "3020000",
     "source": "행정안전부_생활_목욕장업 조회서비스"
   },
