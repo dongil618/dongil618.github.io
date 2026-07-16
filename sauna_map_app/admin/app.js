@@ -6,7 +6,8 @@ const weekdays = [
   ["thursday", "목"], ["friday", "금"], ["saturday", "토"], ["sunday", "일"],
 ];
 
-const state = { places: [], visiblePlaces: [], details: new Map(), entries: new Map(), selected: null };
+const SEARCH_PAGE_SIZE = 100;
+const state = { places: [], visiblePlaces: [], renderedPlaceCount: SEARCH_PAGE_SIZE, details: new Map(), entries: new Map(), selected: null };
 const $ = (selector, root = document) => root.querySelector(selector);
 const $$ = (selector, root = document) => [...root.querySelectorAll(selector)];
 
@@ -205,14 +206,24 @@ async function loadData() {
   }
 }
 
-function renderSearch(query) {
+function renderSearch(query, { append = false } = {}) {
   const normalized = query.trim().toLowerCase();
   const matches = state.places.filter((place) => {
     if (!normalized) return true;
     return `${place.name} ${place.address} ${place.phone || ""}`.toLowerCase().includes(normalized);
-  }).slice(0, 60);
+  });
+  if (!append) state.renderedPlaceCount = SEARCH_PAGE_SIZE;
   state.visiblePlaces = matches;
-  $("#searchResults").innerHTML = matches.map((place) => `
+  const rendered = matches.slice(0, state.renderedPlaceCount);
+  $("#searchCount").textContent = normalized
+    ? `검색 결과 ${matches.length.toLocaleString()}곳 · ${rendered.length.toLocaleString()}곳 표시`
+    : `전체 ${matches.length.toLocaleString()}곳 · ${rendered.length.toLocaleString()}곳 표시`;
+  $("#clearSearch").hidden = !normalized;
+  const moreButton = $("#loadMorePlaces");
+  moreButton.hidden = rendered.length >= matches.length;
+  moreButton.textContent = `다음 ${Math.min(SEARCH_PAGE_SIZE, matches.length - rendered.length).toLocaleString()}곳 더 보기`;
+  $("#showAllPlaces").hidden = rendered.length >= matches.length;
+  $("#searchResults").innerHTML = rendered.map((place) => `
     <button type="button" class="search-result ${state.selected?.id === place.id ? "active" : ""}" data-id="${escapeText(place.id)}" role="option">
       <strong>${escapeText(place.name)}${state.entries.has(place.id) ? '<span class="saved-mark">저장됨</span>' : ""}</strong><small>${escapeText(place.address)} · ${escapeText(place.phone || "전화 없음")}</small>
     </button>`).join("");
@@ -226,7 +237,7 @@ function selectPlace(id) {
   $("#placeAddress").textContent = state.selected.address;
   $("#placeType").textContent = state.selected.type;
   $("#placeId").textContent = state.selected.id;
-  renderSearch($("#placeSearch").value);
+  renderSearch($("#placeSearch").value, { append: true });
   fillForm(state.entries.get(id) || detailToEntry(state.details.get(id)) || emptyEntry(id));
   updateReference();
 }
@@ -432,7 +443,7 @@ function saveSelected() {
     state.entries.set(entry.saunaId, entry);
     persist();
     $("#validationBox").hidden = true;
-    renderSearch($("#placeSearch").value);
+    renderSearch($("#placeSearch").value, { append: true });
     return true;
   } catch (error) {
     showError(error);
@@ -455,6 +466,19 @@ function updateReference() {
 }
 
 $("#placeSearch").addEventListener("input", (event) => renderSearch(event.target.value));
+$("#clearSearch").addEventListener("click", () => {
+  $("#placeSearch").value = "";
+  renderSearch("");
+  $("#placeSearch").focus();
+});
+$("#loadMorePlaces").addEventListener("click", () => {
+  state.renderedPlaceCount += SEARCH_PAGE_SIZE;
+  renderSearch($("#placeSearch").value, { append: true });
+});
+$("#showAllPlaces").addEventListener("click", () => {
+  state.renderedPlaceCount = state.visiblePlaces.length;
+  renderSearch($("#placeSearch").value, { append: true });
+});
 $("#parseHours").addEventListener("click", parseHoursText);
 $("#fillWeekdays").addEventListener("click", () => copyMondayTo(weekdays.slice(0, 5).map(([key]) => key)));
 $("#fillEveryday").addEventListener("click", () => copyMondayTo(weekdays.map(([key]) => key)));

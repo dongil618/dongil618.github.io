@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="color-scheme" content="light">
     <title>사우나 상세정보 편집기</title>
-    <link rel="stylesheet" href="./styles.css?v=20260717-2">
+    <link rel="stylesheet" href="./styles.css?v=20260717-3">
   </head>
   <body>
     <header class="topbar">
@@ -28,7 +28,15 @@
         <div class="search-panel">
           <label for="placeSearch">업소 검색</label>
           <input id="placeSearch" type="search" placeholder="업소명, 주소, 전화번호" autocomplete="off">
+          <div class="search-meta">
+            <span id="searchCount">목록 준비 중</span>
+            <div class="search-meta-actions">
+              <button id="showAllPlaces" class="text-button" type="button" hidden>전체 펼치기</button>
+              <button id="clearSearch" class="text-button" type="button" hidden>검색 초기화</button>
+            </div>
+          </div>
           <div id="searchResults" class="search-results" role="listbox"></div>
+          <button id="loadMorePlaces" class="button secondary load-more" type="button" hidden>다음 업소 더 보기</button>
         </div>
 
         <form id="detailForm" class="detail-form" novalidate>
@@ -193,6 +201,6 @@
       </div>
     </template>
 
-    <script src="./app.js?v=20260717-2" defer></script>
+    <script src="./app.js?v=20260717-3" defer></script>
   </body>
 </html>
