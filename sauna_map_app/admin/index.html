@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light">
+    <title>사우나 상세정보 편집기</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">SAUNA MAP · ADMIN TOOL</p>
+        <h1>상세정보 반자동 편집기</h1>
+      </div>
+      <div class="top-actions">
+        <span id="saveStatus" class="status-pill">데이터 불러오는 중</span>
+        <label class="button secondary file-button">
+          JSON 가져오기
+          <input id="importFile" type="file" accept="application/json,.json">
+        </label>
+        <button id="exportButton" class="button primary" type="button">전체 JSON 내보내기</button>
+      </div>
+    </header>
+
+    <main class="workspace">
+      <section class="editor-pane" aria-label="상세정보 입력">
+        <div class="search-panel">
+          <label for="placeSearch">업소 검색</label>
+          <input id="placeSearch" type="search" placeholder="업소명, 주소, 전화번호" autocomplete="off">
+          <div id="searchResults" class="search-results" role="listbox"></div>
+        </div>
+
+        <form id="detailForm" class="detail-form" novalidate>
+          <section class="place-summary">
+            <div>
+              <p id="placeType" class="eyebrow">업소를 선택하세요</p>
+              <h2 id="placeName">왼쪽 검색창에서 편집할 사우나를 찾으세요</h2>
+              <p id="placeAddress">5,495개 기준 데이터와 정확한 saunaId로 연결됩니다.</p>
+            </div>
+            <span id="placeId" class="id-chip">미선택</span>
+          </section>
+
+          <section class="form-section">
+            <div class="section-heading">
+              <div><span>01</span><h3>확인 정보</h3></div>
+              <p>입력 경위는 내부 raw 파일에만 남고 공개 JSON에서는 제거됩니다.</p>
+            </div>
+            <div class="field-grid three">
+              <label>입력 유형
+                <select id="sourceKind">
+                  <option value="owner">업주 확인</option>
+                  <option value="officialWebsite">공식 홈페이지</option>
+                  <option value="community" selected>관리자·사용자 제보</option>
+                </select>
+              </label>
+              <label>확인일<input id="observedAt" type="date" required></label>
+              <label>재확인 만료일<input id="expiresAt" type="date"></label>
+              <label>출처 이름<input id="sourceName" value="관리자 직접 확인" required></label>
+              <label class="span-two">참고 URL<input id="sourceUrl" type="url" placeholder="https://..."></label>
+              <label class="span-three">사용 근거<input id="sourceLicense" value="관리자 확인 정보" required></label>
+            </div>
+          </section>
+
+          <section class="form-section">
+            <div class="section-heading">
+              <div><span>02</span><h3>주간 영업시간</h3></div>
+              <p>미확인과 휴무를 반드시 구분합니다. 종료가 시작보다 빠르면 익일 종료입니다.</p>
+            </div>
+            <div class="hours-table-wrap">
+              <table class="hours-table">
+                <thead><tr><th>요일</th><th>상태</th><th>24시간</th><th>시작</th><th>종료</th><th>휴게 시작</th><th>휴게 종료</th></tr></thead>
+                <tbody id="weeklyRows"></tbody>
+              </table>
+            </div>
+            <div class="field-grid two compact-grid">
+              <label>공휴일 정책
+                <select id="holidayPolicy">
+                  <option value="unknown">미확인</option>
+                  <option value="openAsUsual">평소와 동일</option>
+                  <option value="closed">공휴일 휴무</option>
+                  <option value="useExceptions">예외일만 적용</option>
+                </select>
+              </label>
+              <label>운영시간 메모<input id="hoursNote" placeholder="입장 마감은 종료 1시간 전"></label>
+            </div>
+          </section>
+
+          <section class="form-section">
+            <div class="section-heading">
+              <div><span>03</span><h3>정기휴무와 예외일</h3></div>
+              <button id="addException" class="text-button" type="button">+ 날짜별 예외 추가</button>
+            </div>
+            <div class="field-grid four compact-grid">
+              <label>정기휴무 규칙
+                <select id="closureKind">
+                  <option value="">없음</option>
+                  <option value="nthWeekday">매월 N번째 요일</option>
+                  <option value="lastWeekday">매월 마지막 요일</option>
+                  <option value="monthlyDate">매월 특정 일</option>
+                </select>
+              </label>
+              <label>요일<select id="closureWeekday"></select></label>
+              <label>순번/일자<input id="closureOrdinal" type="number" min="1" max="31"></label>
+              <label>표시 문구<input id="closureLabel" placeholder="매월 둘째 화요일"></label>
+            </div>
+            <div id="exceptions" class="repeater"></div>
+          </section>
+
+          <section class="form-section">
+            <div class="section-heading">
+              <div><span>04</span><h3>가격</h3></div>
+              <button id="addPrice" class="text-button" type="button">+ 가격 추가</button>
+            </div>
+            <div id="prices" class="repeater"></div>
+          </section>
+
+          <div id="validationBox" class="validation-box" hidden></div>
+          <footer class="form-actions">
+            <button id="resetButton" class="button secondary" type="button">선택 업소 되돌리기</button>
+            <button id="copyButton" class="button secondary" type="button">선택 JSON 복사</button>
+            <button class="button primary" type="submit">브라우저에 저장</button>
+          </footer>
+        </form>
+      </section>
+
+      <aside class="reference-pane" aria-label="네이버 지도 참고">
+        <div class="reference-header">
+          <div><p class="eyebrow">REFERENCE</p><h2>네이버 지도 참고</h2></div>
+          <div class="reference-actions">
+            <a id="naverMapLink" class="button primary" href="https://map.naver.com" target="_blank" rel="noopener noreferrer">새 탭에서 지도</a>
+            <a id="naverBlogLink" class="button secondary" href="https://search.naver.com" target="_blank" rel="noopener noreferrer">블로그 검색</a>
+          </div>
+        </div>
+        <p class="frame-note">네이버가 외부 iframe 표시를 차단하면 위의 새 탭 버튼을 사용하세요. 이 도구는 화면 내용을 자동 수집하지 않습니다.</p>
+        <iframe id="naverFrame" title="네이버 지도 검색" src="about:blank" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+      </aside>
+    </main>
+
+    <template id="exceptionTemplate">
+      <div class="repeater-row exception-row">
+        <label>날짜<input data-field="date" type="date" required></label>
+        <label>상태<select data-field="status"><option value="closed">휴무</option><option value="open">특별 영업</option><option value="unknown">미확인</option></select></label>
+        <label>시작<input data-field="open" type="time"></label>
+        <label>종료<input data-field="close" type="time"></label>
+        <label class="grow">표시 문구<input data-field="label" placeholder="명절 임시휴무"></label>
+        <button class="icon-button remove-row" type="button" aria-label="예외 삭제">×</button>
+      </div>
+    </template>
+
+    <template id="priceTemplate">
+      <div class="repeater-row price-row">
+        <label class="grow">표시명<input data-field="label" placeholder="대인 목욕" required></label>
+        <label>대상<select data-field="audience"><option value="adult">대인</option><option value="youth">청소년</option><option value="child">소인</option><option value="infant">유아</option><option value="senior">경로</option><option value="all">공통</option><option value="other">기타</option></select></label>
+        <label>서비스<select data-field="service"><option value="bath">목욕</option><option value="jjimjil">찜질</option><option value="sauna">사우나</option><option value="overnight">숙박</option><option value="package">회원권</option><option value="rental">대여</option><option value="other">기타</option></select></label>
+        <label>구간<select data-field="timeBand"><option value="standard">일반</option><option value="daytime">주간</option><option value="nighttime">야간</option><option value="weekday">평일</option><option value="weekend">주말</option><option value="holiday">공휴일</option></select></label>
+        <label>금액<input data-field="amount" type="number" min="0" max="1000000" step="100" required></label>
+        <label class="grow">조건<input data-field="conditions" placeholder="만 3세 이상 초등학생 이하"></label>
+        <button class="icon-button remove-row" type="button" aria-label="가격 삭제">×</button>
+      </div>
+    </template>
+
+    <script src="./app.js" defer></script>
+  </body>
+</html>
