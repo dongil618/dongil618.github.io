@@ -249,8 +249,13 @@ function downloadJson(name, value) {
   const blob = new Blob([JSON.stringify(value, null, 2) + "\n"], { type: "application/json" });
   const link = document.createElement("a"); link.href = URL.createObjectURL(blob); link.download = name; link.click(); setTimeout(() => URL.revokeObjectURL(link.href), 1000);
 }
+function normalizeNaverSearchName(name) {
+  return String(name || "")
+    .replace(/^\s*(?:(?:\((?:유|주)\)|㈜|주식회사|유한회사)\s*)+/u, "")
+    .trim();
+}
 function updateReference() {
-  const query = `${state.selected.name} ${state.selected.address}`;
+  const query = normalizeNaverSearchName(state.selected.name);
   const mapUrl = `https://map.naver.com/p/search/${encodeURIComponent(query)}`;
   const blogUrl = `https://search.naver.com/search.naver?where=blog&query=${encodeURIComponent(query)}`;
   $("#naverMapLink").href = mapUrl; $("#naverBlogLink").href = blogUrl; $("#naverFrame").src = mapUrl;
