@@ -19168,7 +19168,7 @@
     "bathRoomCount": 2,
     "permitDate": "2023-07-11",
     "closedDate": null,
-    "updatedAt": "2026-06-29 03:03:03",
+    "updatedAt": "2026-06-29 22:56:33",
     "localGovernmentCode": "6510000",
     "source": "행정안전부_생활_목욕장업 조회서비스"
   },
@@ -19648,7 +19648,7 @@
     "status": "영업/정상",
     "detailStatus": "영업",
     "hasSweatRoom": false,
-    "bathRoomCount": null,
+    "bathRoomCount": 0,
     "permitDate": "1999-08-02",
     "closedDate": null,
     "updatedAt": "2026-04-05 23:10:05",
