@@ -33978,27 +33978,6 @@
     "source": "행정안전부_생활_목욕장업 조회서비스"
   },
   {
-    "id": "3140000-202-1976-00069",
-    "name": "목동탕",
-    "type": "jjimjilbang",
-    "latitude": 37.5396435,
-    "longitude": 126.8662668,
-    "address": "서울특별시 양천구 목동중앙본로7길 42, 1층 (목동)",
-    "roadAddress": "서울특별시 양천구 목동중앙본로7길 42, 1층 (목동)",
-    "lotAddress": "서울특별시 양천구 목동 718-12 1층",
-    "phone": "02-2642-2761",
-    "statusCode": "01",
-    "status": "영업/정상",
-    "detailStatus": "영업",
-    "hasSweatRoom": true,
-    "bathRoomCount": 1,
-    "permitDate": "1976-09-06",
-    "closedDate": null,
-    "updatedAt": "2026-04-25 22:30:13",
-    "localGovernmentCode": "3140000",
-    "source": "행정안전부_생활_목욕장업 조회서비스"
-  },
-  {
     "id": "3050000-202-2003-00016",
     "name": "목련",
     "type": "localBath",
@@ -107956,7 +107935,7 @@
     "bathRoomCount": 2,
     "permitDate": "2026-03-26",
     "closedDate": null,
-    "updatedAt": "2026-04-16 03:03:03",
+    "updatedAt": "2026-07-21 22:58:39",
     "localGovernmentCode": "3530000",
     "source": "행정안전부_생활_목욕장업 조회서비스"
   },
