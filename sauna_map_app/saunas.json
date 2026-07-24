@@ -22192,7 +22192,7 @@
     "bathRoomCount": 2,
     "permitDate": "2006-02-06",
     "closedDate": null,
-    "updatedAt": "2026-01-14 22:56:35",
+    "updatedAt": "2026-07-23 22:56:35",
     "localGovernmentCode": "3580000",
     "source": "행정안전부_생활_목욕장업 조회서비스"
   },
@@ -67279,7 +67279,7 @@
     "bathRoomCount": 2,
     "permitDate": "1999-04-26",
     "closedDate": null,
-    "updatedAt": "2026-03-26 22:41:51",
+    "updatedAt": "2026-07-23 21:56:35",
     "localGovernmentCode": "5070000",
     "source": "행정안전부_생활_목욕장업 조회서비스"
   },
@@ -83008,7 +83008,7 @@
     "bathRoomCount": 4,
     "permitDate": "2025-12-30",
     "closedDate": null,
-    "updatedAt": "2026-01-07 17:28:21",
+    "updatedAt": "2026-07-23 22:56:35",
     "localGovernmentCode": "3580000",
     "source": "행정안전부_생활_목욕장업 조회서비스"
   },
@@ -103740,6 +103740,27 @@
     "source": "행정안전부_생활_목욕장업 조회서비스"
   },
   {
+    "id": "3491000-202-2017-00004",
+    "name": "하워드존슨사우나",
+    "type": "jjimjilbang",
+    "latitude": 37.4934345,
+    "longitude": 126.491492,
+    "address": "인천광역시 영종구 신도시남로142번길 6, 메가스타 영종 지하1층 (운서동)",
+    "roadAddress": "인천광역시 영종구 신도시남로142번길 6, 메가스타 영종 지하1층 (운서동)",
+    "lotAddress": "인천광역시 영종구 운서동 2803-1 메가스타 영종 지하1층",
+    "phone": "032-722-0070",
+    "statusCode": "01",
+    "status": "영업/정상",
+    "detailStatus": "영업",
+    "hasSweatRoom": true,
+    "bathRoomCount": 1,
+    "permitDate": "2017-12-13",
+    "closedDate": null,
+    "updatedAt": "2026-07-23 22:56:35",
+    "localGovernmentCode": "3491000",
+    "source": "행정안전부_생활_목욕장업 조회서비스"
+  },
+  {
     "id": "4701000-202-2014-00003",
     "name": "하은사우나",
     "type": "jjimjilbang",
@@ -105961,7 +105982,7 @@
     "bathRoomCount": 2,
     "permitDate": "2001-09-28",
     "closedDate": null,
-    "updatedAt": "2026-05-04 22:33:58",
+    "updatedAt": "2026-07-23 22:26:35",
     "localGovernmentCode": "3080000",
     "source": "행정안전부_생활_목욕장업 조회서비스"
   },
@@ -111423,6 +111444,27 @@
     "closedDate": null,
     "updatedAt": "2025-12-15 16:15:28",
     "localGovernmentCode": "3000000",
+    "source": "행정안전부_생활_목욕장업 조회서비스"
+  },
+  {
+    "id": "3250000-202-2026-00001",
+    "name": "호텔 토브",
+    "type": "localBath",
+    "latitude": 35.1015371,
+    "longitude": 129.0346643,
+    "address": "부산광역시 중구 백산길 15, 지하1층 (동광동3가)",
+    "roadAddress": "부산광역시 중구 백산길 15, 지하1층 (동광동3가)",
+    "lotAddress": "부산광역시 중구 동광동3가 14",
+    "phone": "051-400-5999",
+    "statusCode": "01",
+    "status": "영업/정상",
+    "detailStatus": "영업",
+    "hasSweatRoom": false,
+    "bathRoomCount": 0,
+    "permitDate": "2026-07-22",
+    "closedDate": null,
+    "updatedAt": "2026-07-23 22:26:35",
+    "localGovernmentCode": "3250000",
     "source": "행정안전부_생활_목욕장업 조회서비스"
   },
   {
