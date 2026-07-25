@@ -310,7 +310,7 @@
     "bathRoomCount": 2,
     "permitDate": "2013-04-22",
     "closedDate": null,
-    "updatedAt": "2026-03-10 21:32:00",
+    "updatedAt": "2026-07-24 21:26:35",
     "localGovernmentCode": "3860000",
     "source": "행정안전부_생활_목욕장업 조회서비스"
   },
@@ -5326,10 +5326,10 @@
     "status": "영업/정상",
     "detailStatus": "영업",
     "hasSweatRoom": false,
-    "bathRoomCount": null,
+    "bathRoomCount": 0,
     "permitDate": "1971-01-08",
     "closedDate": null,
-    "updatedAt": "2025-12-15 16:15:28",
+    "updatedAt": "2026-07-24 22:26:35",
     "localGovernmentCode": "3310000",
     "source": "행정안전부_생활_목욕장업 조회서비스"
   },
@@ -23788,7 +23788,7 @@
     "bathRoomCount": 1,
     "permitDate": "2020-06-19",
     "closedDate": null,
-    "updatedAt": "2026-03-14 21:56:37",
+    "updatedAt": "2026-07-24 21:56:35",
     "localGovernmentCode": "5480000",
     "source": "행정안전부_생활_목욕장업 조회서비스"
   },
@@ -30613,7 +30613,7 @@
     "bathRoomCount": 2,
     "permitDate": "2026-06-10",
     "closedDate": null,
-    "updatedAt": "2026-06-17 03:03:03",
+    "updatedAt": "2026-07-24 22:26:35",
     "localGovernmentCode": "3220000",
     "source": "행정안전부_생활_목욕장업 조회서비스"
   },
@@ -38341,7 +38341,7 @@
     "bathRoomCount": 2,
     "permitDate": "2004-07-12",
     "closedDate": null,
-    "updatedAt": "2026-04-28 22:30:20",
+    "updatedAt": "2026-07-24 22:26:35",
     "localGovernmentCode": "3190000",
     "source": "행정안전부_생활_목욕장업 조회서비스"
   },
@@ -43990,7 +43990,7 @@
     "bathRoomCount": 0,
     "permitDate": "1983-01-07",
     "closedDate": null,
-    "updatedAt": "2026-06-02 03:03:03",
+    "updatedAt": "2026-07-24 22:26:35",
     "localGovernmentCode": "3310000",
     "source": "행정안전부_생활_목욕장업 조회서비스"
   },
@@ -53823,6 +53823,27 @@
     "source": "행정안전부_생활_목욕장업 조회서비스"
   },
   {
+    "id": "3010000-202-2026-00002",
+    "name": "솔아스파",
+    "type": "localBath",
+    "latitude": 37.5598445,
+    "longitude": 126.9837949,
+    "address": "서울특별시 중구 퇴계로14길 15, 2층 (회현동3가)",
+    "roadAddress": "서울특별시 중구 퇴계로14길 15, 2층 (회현동3가)",
+    "lotAddress": "서울특별시 중구 회현동3가 9-8",
+    "phone": "",
+    "statusCode": "01",
+    "status": "영업/정상",
+    "detailStatus": "영업",
+    "hasSweatRoom": false,
+    "bathRoomCount": 6,
+    "permitDate": "2026-07-23",
+    "closedDate": null,
+    "updatedAt": "2026-07-24 22:56:35",
+    "localGovernmentCode": "3010000",
+    "source": "행정안전부_생활_목욕장업 조회서비스"
+  },
+  {
     "id": "3800000-202-2012-00001",
     "name": "솔트P소금찜질방",
     "type": "jjimjilbang",
@@ -62848,7 +62869,7 @@
     "bathRoomCount": 4,
     "permitDate": "2026-06-24",
     "closedDate": null,
-    "updatedAt": "2026-06-25 21:26:35",
+    "updatedAt": "2026-07-24 21:26:35",
     "localGovernmentCode": "3860000",
     "source": "행정안전부_생활_목욕장업 조회서비스"
   },
@@ -75931,7 +75952,7 @@
     "bathRoomCount": 2,
     "permitDate": "2026-02-10",
     "closedDate": null,
-    "updatedAt": "2026-05-04 22:33:59",
+    "updatedAt": "2026-07-24 22:26:35",
     "localGovernmentCode": "3080000",
     "source": "행정안전부_생활_목욕장업 조회서비스"
   },
