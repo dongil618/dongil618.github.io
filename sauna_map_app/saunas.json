@@ -462,6 +462,27 @@
     "source": "행정안전부_생활_목욕장업 조회서비스"
   },
   {
+    "id": "5670140-202-1996-00001",
+    "name": "(주)디에이치스파",
+    "type": "jjimjilbang",
+    "latitude": 35.2166764,
+    "longitude": 128.6920635,
+    "address": "경상남도 창원시 성산구 원이대로 776, 2.3층 목욕탕호 (상남동, 성원아파트 2단지목욕탕상가)",
+    "roadAddress": "경상남도 창원시 성산구 원이대로 776, 2.3층 목욕탕호 (상남동, 성원아파트 2단지목욕탕상가)",
+    "lotAddress": "경상남도 창원시 성산구 상남동 45-1 성원2단지 목욕탕상가",
+    "phone": "055-262-3553",
+    "statusCode": "01",
+    "status": "영업/정상",
+    "detailStatus": "영업",
+    "hasSweatRoom": true,
+    "bathRoomCount": 2,
+    "permitDate": "1996-02-24",
+    "closedDate": null,
+    "updatedAt": "2026-07-25 21:56:35",
+    "localGovernmentCode": "5670000",
+    "source": "행정안전부_생활_목욕장업 조회서비스"
+  },
+  {
     "id": "5875000-202-2006-00001",
     "name": "(주)라한호텔목포",
     "type": "jjimjilbang",
@@ -604,7 +625,7 @@
     "bathRoomCount": 2,
     "permitDate": "2024-03-19",
     "closedDate": null,
-    "updatedAt": "2026-03-10 21:34:13",
+    "updatedAt": "2026-07-25 21:26:35",
     "localGovernmentCode": "3860000",
     "source": "행정안전부_생활_목욕장업 조회서비스"
   },
@@ -38803,7 +38824,7 @@
     "bathRoomCount": 2,
     "permitDate": "2020-04-09",
     "closedDate": null,
-    "updatedAt": "2026-03-10 21:34:06",
+    "updatedAt": "2026-07-25 21:26:35",
     "localGovernmentCode": "3860000",
     "source": "행정안전부_생활_목욕장업 조회서비스"
   },
@@ -58060,7 +58081,7 @@
     "bathRoomCount": 1,
     "permitDate": "2003-06-27",
     "closedDate": null,
-    "updatedAt": "2026-04-15 03:03:03",
+    "updatedAt": "2026-07-25 21:56:35",
     "localGovernmentCode": "3740000",
     "source": "행정안전부_생활_목욕장업 조회서비스"
   },
@@ -75952,7 +75973,7 @@
     "bathRoomCount": 2,
     "permitDate": "2026-02-10",
     "closedDate": null,
-    "updatedAt": "2026-07-24 22:26:35",
+    "updatedAt": "2026-07-25 22:26:35",
     "localGovernmentCode": "3080000",
     "source": "행정안전부_생활_목욕장업 조회서비스"
   },
@@ -88701,27 +88722,6 @@
     "closedDate": null,
     "updatedAt": "2025-12-15 16:15:28",
     "localGovernmentCode": "5370000",
-    "source": "행정안전부_생활_목욕장업 조회서비스"
-  },
-  {
-    "id": "5670140-202-1996-00001",
-    "name": "중앙목욕탕",
-    "type": "jjimjilbang",
-    "latitude": 35.2166764,
-    "longitude": 128.6920635,
-    "address": "경상남도 창원시 성산구 원이대로 776, 2.3층 목욕탕호 (상남동, 성원아파트 2단지목욕탕상가)",
-    "roadAddress": "경상남도 창원시 성산구 원이대로 776, 2.3층 목욕탕호 (상남동, 성원아파트 2단지목욕탕상가)",
-    "lotAddress": "경상남도 창원시 성산구 상남동 45-1 성원2단지 목욕탕상가",
-    "phone": "055-262-3553",
-    "statusCode": "01",
-    "status": "영업/정상",
-    "detailStatus": "영업",
-    "hasSweatRoom": true,
-    "bathRoomCount": 2,
-    "permitDate": "1996-02-24",
-    "closedDate": null,
-    "updatedAt": "2025-12-15 16:15:28",
-    "localGovernmentCode": "5670000",
     "source": "행정안전부_생활_목욕장업 조회서비스"
   },
   {
