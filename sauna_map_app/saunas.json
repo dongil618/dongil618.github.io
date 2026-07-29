@@ -5287,7 +5287,7 @@
     "bathRoomCount": 2,
     "permitDate": "1978-12-06",
     "closedDate": null,
-    "updatedAt": "2025-12-15 16:15:28",
+    "updatedAt": "2026-07-28 22:56:35",
     "localGovernmentCode": "4641000",
     "source": "행정안전부_생활_목욕장업 조회서비스"
   },
@@ -5413,7 +5413,7 @@
     "bathRoomCount": 0,
     "permitDate": "2003-03-27",
     "closedDate": null,
-    "updatedAt": "2025-12-15 16:15:28",
+    "updatedAt": "2026-07-28 21:56:35",
     "localGovernmentCode": "5370000",
     "source": "행정안전부_생활_목욕장업 조회서비스"
   },
@@ -34519,7 +34519,7 @@
     "bathRoomCount": 0,
     "permitDate": "2019-05-01",
     "closedDate": null,
-    "updatedAt": "2025-12-15 16:15:28",
+    "updatedAt": "2026-07-28 22:58:18",
     "localGovernmentCode": "3520000",
     "source": "행정안전부_생활_목욕장업 조회서비스"
   },
@@ -108733,7 +108733,7 @@
     "bathRoomCount": 0,
     "permitDate": "2026-06-08",
     "closedDate": null,
-    "updatedAt": "2026-06-09 21:26:35",
+    "updatedAt": "2026-07-28 21:26:35",
     "localGovernmentCode": "3940000",
     "source": "행정안전부_생활_목욕장업 조회서비스"
   },
