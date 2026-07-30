@@ -29379,6 +29379,27 @@
     "source": "행정안전부_생활_목욕장업 조회서비스"
   },
   {
+    "id": "3460000-202-2026-00001",
+    "name": "러너스테이",
+    "type": "localBath",
+    "latitude": 35.8256103,
+    "longitude": 128.6114136,
+    "address": "대구광역시 수성구 용학로 12-1, 1층 (파동)",
+    "roadAddress": "대구광역시 수성구 용학로 12-1, 1층 (파동)",
+    "lotAddress": "대구광역시 수성구 파동 692 1층",
+    "phone": "",
+    "statusCode": "01",
+    "status": "영업/정상",
+    "detailStatus": "영업",
+    "hasSweatRoom": false,
+    "bathRoomCount": null,
+    "permitDate": "2026-07-28",
+    "closedDate": null,
+    "updatedAt": "2026-07-29 22:26:35",
+    "localGovernmentCode": "3460000",
+    "source": "행정안전부_생활_목욕장업 조회서비스"
+  },
+  {
     "id": "4681000-202-2026-00001",
     "name": "럭키 점핑 다이어트",
     "type": "jjimjilbang",
@@ -38656,7 +38677,7 @@
     "bathRoomCount": 0,
     "permitDate": "2004-03-10",
     "closedDate": null,
-    "updatedAt": "2025-12-15 16:15:28",
+    "updatedAt": "2026-07-29 22:26:35",
     "localGovernmentCode": "3310000",
     "source": "행정안전부_생활_목욕장업 조회서비스"
   },
@@ -44032,7 +44053,7 @@
     "bathRoomCount": 2,
     "permitDate": "1994-04-30",
     "closedDate": null,
-    "updatedAt": "2026-05-08 22:40:52",
+    "updatedAt": "2026-07-29 22:26:35",
     "localGovernmentCode": "3380000",
     "source": "행정안전부_생활_목욕장업 조회서비스"
   },
@@ -68100,6 +68121,27 @@
     "closedDate": null,
     "updatedAt": "2026-07-14 11:38:15",
     "localGovernmentCode": "5785000",
+    "source": "행정안전부_생활_목욕장업 조회서비스"
+  },
+  {
+    "id": "3220000-202-2026-00007",
+    "name": "여운 세신샵",
+    "type": "localBath",
+    "latitude": 37.5061356,
+    "longitude": 127.0340685,
+    "address": "서울특별시 강남구 논현로 561, 지하2층 (역삼동)",
+    "roadAddress": "서울특별시 강남구 논현로 561, 지하2층 (역삼동)",
+    "lotAddress": "서울특별시 강남구 역삼동 606-28",
+    "phone": "",
+    "statusCode": "01",
+    "status": "영업/정상",
+    "detailStatus": "영업",
+    "hasSweatRoom": false,
+    "bathRoomCount": 4,
+    "permitDate": "2026-07-28",
+    "closedDate": null,
+    "updatedAt": "2026-07-29 22:26:37",
+    "localGovernmentCode": "3220000",
     "source": "행정안전부_생활_목욕장업 조회서비스"
   },
   {
