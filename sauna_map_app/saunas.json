@@ -1339,7 +1339,7 @@
     "bathRoomCount": 0,
     "permitDate": "2005-11-03",
     "closedDate": null,
-    "updatedAt": "2026-07-14 11:38:15",
+    "updatedAt": "2026-07-31 22:26:35",
     "localGovernmentCode": "5825000",
     "source": "행정안전부_생활_목욕장업 조회서비스"
   },
@@ -28996,7 +28996,7 @@
     "bathRoomCount": 4,
     "permitDate": "2016-08-30",
     "closedDate": null,
-    "updatedAt": "2026-05-09 22:57:14",
+    "updatedAt": "2026-07-31 22:57:08",
     "localGovernmentCode": "6520000",
     "source": "행정안전부_생활_목욕장업 조회서비스"
   },
@@ -57059,7 +57059,7 @@
   {
     "id": "5735000-202-2026-00001",
     "name": "숨결온",
-    "type": "localBath",
+    "type": "jjimjilbang",
     "latitude": 36.6706995,
     "longitude": 127.4856535,
     "address": "충청북도 청주시 청원구 율봉로159번길 52, 2층 (율량동)",
@@ -57069,11 +57069,11 @@
     "statusCode": "01",
     "status": "영업/정상",
     "detailStatus": "영업",
-    "hasSweatRoom": false,
+    "hasSweatRoom": true,
     "bathRoomCount": 0,
     "permitDate": "2026-07-13",
     "closedDate": null,
-    "updatedAt": "2026-07-14 22:56:36",
+    "updatedAt": "2026-07-31 22:56:36",
     "localGovernmentCode": "5710000",
     "source": "행정안전부_생활_목욕장업 조회서비스"
   },
@@ -64885,7 +64885,7 @@
     "bathRoomCount": 0,
     "permitDate": "2011-12-16",
     "closedDate": null,
-    "updatedAt": "2025-12-15 16:15:28",
+    "updatedAt": "2026-07-31 22:56:35",
     "localGovernmentCode": "4390000",
     "source": "행정안전부_생활_목욕장업 조회서비스"
   },
@@ -68665,7 +68665,7 @@
     "bathRoomCount": 4,
     "permitDate": "2023-12-26",
     "closedDate": null,
-    "updatedAt": "2026-01-07 17:28:21",
+    "updatedAt": "2026-07-31 22:56:35",
     "localGovernmentCode": "3580000",
     "source": "행정안전부_생활_목욕장업 조회서비스"
   },
@@ -93589,10 +93589,10 @@
     "status": "영업/정상",
     "detailStatus": "영업",
     "hasSweatRoom": false,
-    "bathRoomCount": 5,
+    "bathRoomCount": 7,
     "permitDate": "2024-12-06",
     "closedDate": null,
-    "updatedAt": "2025-12-15 16:15:28",
+    "updatedAt": "2026-07-31 22:56:35",
     "localGovernmentCode": "3700000",
     "source": "행정안전부_생활_목욕장업 조회서비스"
   },
@@ -98485,7 +98485,7 @@
     "bathRoomCount": 12,
     "permitDate": "2012-10-04",
     "closedDate": null,
-    "updatedAt": "2026-05-07 22:41:25",
+    "updatedAt": "2026-07-31 22:26:35",
     "localGovernmentCode": "3670000",
     "source": "행정안전부_생활_목욕장업 조회서비스"
   },
