@@ -4951,7 +4951,7 @@
     "bathRoomCount": 2,
     "permitDate": "2006-03-14",
     "closedDate": null,
-    "updatedAt": "2025-12-15 16:15:28",
+    "updatedAt": "2026-08-04 22:56:35",
     "localGovernmentCode": "3570000",
     "source": "행정안전부_생활_목욕장업 조회서비스"
   },
@@ -9298,7 +9298,7 @@
     "bathRoomCount": null,
     "permitDate": "1999-11-15",
     "closedDate": null,
-    "updatedAt": "2025-12-15 16:15:28",
+    "updatedAt": "2026-08-05 22:26:36",
     "localGovernmentCode": "3220000",
     "source": "행정안전부_생활_목욕장업 조회서비스"
   },
@@ -29248,7 +29248,7 @@
     "bathRoomCount": 1,
     "permitDate": "2018-07-23",
     "closedDate": null,
-    "updatedAt": "2026-07-09 22:26:35",
+    "updatedAt": "2026-08-05 22:26:35",
     "localGovernmentCode": "3210000",
     "source": "행정안전부_생활_목욕장업 조회서비스"
   },
@@ -38362,7 +38362,7 @@
     "bathRoomCount": 2,
     "permitDate": "2004-07-12",
     "closedDate": null,
-    "updatedAt": "2026-07-24 22:26:35",
+    "updatedAt": "2026-08-04 22:26:35",
     "localGovernmentCode": "3190000",
     "source": "행정안전부_생활_목욕장업 조회서비스"
   },
@@ -53587,7 +53587,7 @@
     "bathRoomCount": 2,
     "permitDate": "2025-07-30",
     "closedDate": null,
-    "updatedAt": "2026-05-29 03:03:03",
+    "updatedAt": "2026-08-04 22:26:35",
     "localGovernmentCode": "3460000",
     "source": "행정안전부_생활_목욕장업 조회서비스"
   },
@@ -57178,7 +57178,7 @@
     "bathRoomCount": 3,
     "permitDate": "2003-06-10",
     "closedDate": null,
-    "updatedAt": "2026-07-07 10:07:40",
+    "updatedAt": "2026-08-06 22:56:33",
     "localGovernmentCode": "6510000",
     "source": "행정안전부_생활_목욕장업 조회서비스"
   },
@@ -62911,7 +62911,7 @@
     "bathRoomCount": 0,
     "permitDate": "2003-03-07",
     "closedDate": null,
-    "updatedAt": "2025-12-18 02:40:00",
+    "updatedAt": "2026-08-06 22:26:35",
     "localGovernmentCode": "3050000",
     "source": "행정안전부_생활_목욕장업 조회서비스"
   },
@@ -65116,7 +65116,7 @@
     "bathRoomCount": 0,
     "permitDate": "2023-09-12",
     "closedDate": null,
-    "updatedAt": "2026-05-09 22:56:41",
+    "updatedAt": "2026-08-05 22:26:35",
     "localGovernmentCode": "3100000",
     "source": "행정안전부_생활_목욕장업 조회서비스"
   },
@@ -66125,6 +66125,27 @@
     "permitDate": "2006-01-13",
     "closedDate": null,
     "updatedAt": "2025-12-15 16:15:28",
+    "localGovernmentCode": "4170000",
+    "source": "행정안전부_생활_목욕장업 조회서비스"
+  },
+  {
+    "id": "4170000-202-2026-00002",
+    "name": "양평점핑스타",
+    "type": "jjimjilbang",
+    "latitude": 37.4906439,
+    "longitude": 127.4896319,
+    "address": "경기도 양평군 양평읍 양근로 177, 6층 601호",
+    "roadAddress": "경기도 양평군 양평읍 양근로 177, 6층 601호",
+    "lotAddress": "경기도 양평군 양평읍 양근리 417-1",
+    "phone": "",
+    "statusCode": "01",
+    "status": "영업/정상",
+    "detailStatus": "영업",
+    "hasSweatRoom": true,
+    "bathRoomCount": 0,
+    "permitDate": "2026-08-04",
+    "closedDate": null,
+    "updatedAt": "2026-08-05 21:56:35",
     "localGovernmentCode": "4170000",
     "source": "행정안전부_생활_목욕장업 조회서비스"
   },
@@ -70912,7 +70933,7 @@
     "bathRoomCount": 2,
     "permitDate": "2019-07-02",
     "closedDate": null,
-    "updatedAt": "2026-04-28 22:00:53",
+    "updatedAt": "2026-08-05 21:56:35",
     "localGovernmentCode": "5420000",
     "source": "행정안전부_생활_목욕장업 조회서비스"
   },
@@ -72300,27 +72321,6 @@
     "closedDate": null,
     "updatedAt": "2026-05-04 22:33:58",
     "localGovernmentCode": "3080000",
-    "source": "행정안전부_생활_목욕장업 조회서비스"
-  },
-  {
-    "id": "3270000-202-2001-00002",
-    "name": "옥천탕",
-    "type": "localBath",
-    "latitude": 35.1368038,
-    "longitude": 129.0469774,
-    "address": "부산광역시 동구 망양로 851 (수정동)",
-    "roadAddress": "부산광역시 동구 망양로 851 (수정동)",
-    "lotAddress": "부산광역시 동구 수정동 417-12",
-    "phone": "051-468-7530",
-    "statusCode": "01",
-    "status": "영업/정상",
-    "detailStatus": "영업",
-    "hasSweatRoom": false,
-    "bathRoomCount": 0,
-    "permitDate": "2001-07-26",
-    "closedDate": null,
-    "updatedAt": "2026-05-04 22:33:58",
-    "localGovernmentCode": "3270000",
     "source": "행정안전부_생활_목욕장업 조회서비스"
   },
   {
@@ -88027,7 +88027,7 @@
     "bathRoomCount": 2,
     "permitDate": "2004-07-21",
     "closedDate": null,
-    "updatedAt": "2025-12-15 16:15:28",
+    "updatedAt": "2026-08-05 22:56:33",
     "localGovernmentCode": "6510000",
     "source": "행정안전부_생활_목욕장업 조회서비스"
   },
@@ -105604,7 +105604,7 @@
     "bathRoomCount": 2,
     "permitDate": "2024-02-26",
     "closedDate": null,
-    "updatedAt": "2025-12-15 16:15:28",
+    "updatedAt": "2026-08-06 21:56:35",
     "localGovernmentCode": "5350000",
     "source": "행정안전부_생활_목욕장업 조회서비스"
   },
@@ -114594,27 +114594,6 @@
     "closedDate": null,
     "updatedAt": "2025-12-15 16:15:28",
     "localGovernmentCode": "6510000",
-    "source": "행정안전부_생활_목욕장업 조회서비스"
-  },
-  {
-    "id": "3530000-202-2018-00003",
-    "name": "휴림 토르마린 저온 찜질방",
-    "type": "jjimjilbang",
-    "latitude": 37.4287151,
-    "longitude": 126.7147769,
-    "address": "인천광역시 남동구 남촌로 83, 2층 (남촌동)",
-    "roadAddress": "인천광역시 남동구 남촌로 83, 2층 (남촌동)",
-    "lotAddress": "인천광역시 남동구 남촌동 266-8 2층전체",
-    "phone": "032-464-7856",
-    "statusCode": "01",
-    "status": "영업/정상",
-    "detailStatus": "영업",
-    "hasSweatRoom": true,
-    "bathRoomCount": 0,
-    "permitDate": "2018-11-16",
-    "closedDate": null,
-    "updatedAt": "2025-12-15 16:15:28",
-    "localGovernmentCode": "3530000",
     "source": "행정안전부_생활_목욕장업 조회서비스"
   },
   {
