@@ -19189,7 +19189,7 @@
     "bathRoomCount": 2,
     "permitDate": "2023-07-11",
     "closedDate": null,
-    "updatedAt": "2026-06-29 22:56:33",
+    "updatedAt": "2026-08-08 22:56:33",
     "localGovernmentCode": "6510000",
     "source": "행정안전부_생활_목욕장업 조회서비스"
   },
@@ -35149,7 +35149,7 @@
     "bathRoomCount": 1,
     "permitDate": "2020-12-31",
     "closedDate": null,
-    "updatedAt": "2026-07-14 11:38:15",
+    "updatedAt": "2026-08-07 22:59:19",
     "localGovernmentCode": "5795000",
     "source": "행정안전부_생활_목욕장업 조회서비스"
   },
@@ -52873,7 +52873,7 @@
     "bathRoomCount": 1,
     "permitDate": "2020-12-31",
     "closedDate": null,
-    "updatedAt": "2026-07-14 11:38:15",
+    "updatedAt": "2026-08-08 22:59:19",
     "localGovernmentCode": "5795000",
     "source": "행정안전부_생활_목욕장업 조회서비스"
   },
@@ -53379,27 +53379,6 @@
     "closedDate": null,
     "updatedAt": "2025-12-15 16:15:28",
     "localGovernmentCode": "3530000",
-    "source": "행정안전부_생활_목욕장업 조회서비스"
-  },
-  {
-    "id": "4671000-202-2001-00004",
-    "name": "소룡성지사우나",
-    "type": "sauna",
-    "latitude": 35.9752696,
-    "longitude": 126.6827775,
-    "address": "전북특별자치도 군산시 설림3길 32 (소룡동)",
-    "roadAddress": "전북특별자치도 군산시 설림3길 32 (소룡동)",
-    "lotAddress": "전북특별자치도 군산시 소룡동 1347-14",
-    "phone": "063-461-3088",
-    "statusCode": "01",
-    "status": "영업/정상",
-    "detailStatus": "영업",
-    "hasSweatRoom": false,
-    "bathRoomCount": 0,
-    "permitDate": "2001-12-06",
-    "closedDate": null,
-    "updatedAt": "2025-12-15 16:15:28",
-    "localGovernmentCode": "4671000",
     "source": "행정안전부_생활_목욕장업 조회서비스"
   },
   {
@@ -58146,6 +58125,27 @@
     "closedDate": null,
     "updatedAt": "2026-05-29 03:03:03",
     "localGovernmentCode": "3330000",
+    "source": "행정안전부_생활_목욕장업 조회서비스"
+  },
+  {
+    "id": "4671000-202-2001-00004",
+    "name": "스파밸리",
+    "type": "localBath",
+    "latitude": 35.9752696,
+    "longitude": 126.6827775,
+    "address": "전북특별자치도 군산시 설림3길 32 (소룡동)",
+    "roadAddress": "전북특별자치도 군산시 설림3길 32 (소룡동)",
+    "lotAddress": "전북특별자치도 군산시 소룡동 1347-14",
+    "phone": "063-461-3088",
+    "statusCode": "01",
+    "status": "영업/정상",
+    "detailStatus": "영업",
+    "hasSweatRoom": false,
+    "bathRoomCount": 0,
+    "permitDate": "2001-12-06",
+    "closedDate": null,
+    "updatedAt": "2026-08-08 22:56:35",
+    "localGovernmentCode": "4671000",
     "source": "행정안전부_생활_목욕장업 조회서비스"
   },
   {
@@ -68140,7 +68140,7 @@
     "bathRoomCount": 3,
     "permitDate": "2023-10-30",
     "closedDate": null,
-    "updatedAt": "2026-07-14 11:38:15",
+    "updatedAt": "2026-08-07 22:59:19",
     "localGovernmentCode": "5795000",
     "source": "행정안전부_생활_목욕장업 조회서비스"
   },
@@ -101761,7 +101761,7 @@
     "bathRoomCount": 0,
     "permitDate": "1964-10-28",
     "closedDate": null,
-    "updatedAt": "2026-04-08 03:03:03",
+    "updatedAt": "2026-08-08 21:26:35",
     "localGovernmentCode": "4281000",
     "source": "행정안전부_생활_목욕장업 조회서비스"
   },
@@ -112704,6 +112704,27 @@
     "closedDate": null,
     "updatedAt": "2026-04-01 03:03:03",
     "localGovernmentCode": "5670000",
+    "source": "행정안전부_생활_목욕장업 조회서비스"
+  },
+  {
+    "id": "3950000-202-2026-00009",
+    "name": "화정 드루와 점핑온열 다이어트",
+    "type": "localBath",
+    "latitude": 37.6304166,
+    "longitude": 126.832432,
+    "address": "경기도 고양시 덕양구 화신로 259, 207호 (화정동)",
+    "roadAddress": "경기도 고양시 덕양구 화신로 259, 207호 (화정동)",
+    "lotAddress": "경기도 고양시 덕양구 화정동 1000-1 207호",
+    "phone": "",
+    "statusCode": "01",
+    "status": "영업/정상",
+    "detailStatus": "영업",
+    "hasSweatRoom": false,
+    "bathRoomCount": 0,
+    "permitDate": "2026-08-06",
+    "closedDate": null,
+    "updatedAt": "2026-08-07 21:26:35",
+    "localGovernmentCode": "3940000",
     "source": "행정안전부_생활_목욕장업 조회서비스"
   },
   {
