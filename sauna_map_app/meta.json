@@ -1,10 +1,10 @@
 {
   "source": "행정안전부_생활_목욕장업 조회서비스",
   "sourceUrl": "https://apis.data.go.kr/1741000/public_baths/info",
-  "generatedAt": "2026-08-12T19:27:48.669969Z",
-  "sourceUpdatedAt": "2026-08-11 21:56:51",
-  "totalCount": 5503,
+  "generatedAt": "2026-08-14T19:15:25.613121Z",
+  "sourceUpdatedAt": "2026-08-13 23:00:26",
+  "totalCount": 5502,
   "enrichedCount": 0,
-  "contentHash": "0e4f45486573380ef4b509a5f429a5a73a267cb235f7ea3a1e70ac8f286e7a89",
+  "contentHash": "bff36f97965c9cdc691b748682a6b54299305393efdab0f8d918c0c2c798c49b",
   "coordinateSystem": "WGS84 (converted from EPSG:5174)"
 }
