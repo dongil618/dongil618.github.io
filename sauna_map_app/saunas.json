@@ -33600,27 +33600,6 @@
     "source": "행정안전부_생활_목욕장업 조회서비스"
   },
   {
-    "id": "4701000-202-2020-00001",
-    "name": "명품사우나",
-    "type": "sauna",
-    "latitude": 35.4000624,
-    "longitude": 127.3718461,
-    "address": "전북특별자치도 남원시 금동로 15-12, 1~2층 (금동)",
-    "roadAddress": "전북특별자치도 남원시 금동로 15-12, 1~2층 (금동)",
-    "lotAddress": "전북특별자치도 남원시 금동 312",
-    "phone": "063-626-8887",
-    "statusCode": "01",
-    "status": "영업/정상",
-    "detailStatus": "영업",
-    "hasSweatRoom": false,
-    "bathRoomCount": 8,
-    "permitDate": "2020-10-21",
-    "closedDate": null,
-    "updatedAt": "2025-12-15 16:15:28",
-    "localGovernmentCode": "4701000",
-    "source": "행정안전부_생활_목욕장업 조회서비스"
-  },
-  {
     "id": "5670206-202-1983-00001",
     "name": "명품탕",
     "type": "localBath",
