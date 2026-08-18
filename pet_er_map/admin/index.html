@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="dark light">
+    <meta name="robots" content="noindex">
+    <title>펫응급맵 운영정보 편집기</title>
+    <link rel="stylesheet" href="./styles.css?v=20260818-1">
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">PET ER MAP · ADMIN</p>
+        <h1>병원 운영정보 편집기 <small>(overrides YAML 생성)</small></h1>
+      </div>
+      <div class="top-actions">
+        <span id="saveStatus" class="status-pill">데이터 불러오는 중</span>
+        <label class="button secondary file-button">
+          bundle 가져오기
+          <input id="importFile" type="file" accept="application/json,.json">
+        </label>
+        <button id="exportButton" class="button primary" type="button">전체 내보내기 (bundle.json)</button>
+      </div>
+    </header>
+
+    <main class="workspace">
+      <aside class="list-pane" aria-label="병원 검색">
+        <label for="placeSearch">병원 검색</label>
+        <input id="placeSearch" type="search" placeholder="병원명, 주소, 전화, 관리번호" autocomplete="off">
+        <div class="filter-row">
+          <select id="sidoFilter" aria-label="시도"><option value="">전체 지역</option></select>
+          <label class="check"><input id="onlyCandidates" type="checkbox" checked> 24시·야간·응급 이름만</label>
+          <label class="check"><input id="onlySaved" type="checkbox"> 저장된 것만</label>
+        </div>
+        <div class="search-meta">
+          <span id="searchCount">목록 준비 중</span>
+          <button id="clearSearch" class="text-button" type="button" hidden>검색 초기화</button>
+        </div>
+        <div id="searchResults" class="search-results" role="listbox"></div>
+        <button id="loadMorePlaces" class="button secondary load-more" type="button" hidden>더 보기</button>
+      </aside>
+
+      <form id="detailForm" class="detail-form" novalidate>
+        <section class="place-summary">
+          <div>
+            <p id="placeMeta" class="eyebrow">병원을 선택하세요</p>
+            <h2 id="placeName">왼쪽 목록에서 편집할 병원을 찾으세요</h2>
+            <p id="placeAddress">공공데이터(행안부) 기준 정보와 관리번호(id)로 연결됩니다.</p>
+          </div>
+          <div class="summary-side">
+            <span id="placeId" class="id-chip">미선택</span>
+            <span id="publicState" class="pill muted">—</span>
+          </div>
+        </section>
+
+        <section class="form-section">
+          <div class="section-heading">
+            <div><span>01</span><h3>확인 출처</h3></div>
+            <p>어디서, 언제 확인했는지. 신뢰도 점수는 출처와 경과일로 자동 계산됩니다.</p>
+          </div>
+          <div class="field-grid three">
+            <label>출처 유형
+              <select id="sourceType">
+                <option value="hospitalVerified">병원 직접 확인 (95)</option>
+                <option value="officialWebsite">공식 홈페이지/SNS (85)</option>
+                <option value="phoneCall" selected>전화 확인 (80)</option>
+                <option value="userReports">사용자 제보 다수 (55)</option>
+                <option value="mapApi">지도 앱 정보 (40)</option>
+                <option value="userReport">사용자 제보 1건 (35)</option>
+                <option value="publicData">공공데이터만 (30)</option>
+              </select>
+            </label>
+            <label>확인 시각 (KST)
+              <input id="verifiedAt" type="datetime-local" step="60">
+            </label>
+            <label>확인자
+              <input id="verifiedBy" type="text" value="admin" placeholder="admin">
+            </label>
+          </div>
+          <label>출처 URL (홈페이지·인스타·네이버플레이스 등)
+            <input id="sourceUrl" type="url" placeholder="https://">
+          </label>
+        </section>
+
+        <section class="form-section">
+          <div class="section-heading">
+            <div><span>02</span><h3>전화번호</h3></div>
+            <p>대표 외에 야간·응급 전용 번호가 있으면 따로 적어 두면 앱이 응급 &gt; 야간 &gt; 대표 순으로 CTA 에 씁니다.</p>
+          </div>
+          <div id="phoneRows" class="phone-rows"></div>
+          <button id="addPhone" class="text-button" type="button">+ 번호 추가</button>
+        </section>
+
+        <section class="form-section">
+          <div class="section-heading">
+            <div><span>03</span><h3>주간 시간표</h3></div>
+            <p>일반 진료 · 야간 진료 · 응급 접수 창구를 요일별로. 자정을 넘기면 종료 시각에 <b>익일</b> 체크. 24시간이면 00:00~24:00.</p>
+          </div>
+          <div class="preset-row">
+            <button type="button" class="chip" data-preset="24h-emergency">24시간 응급(연중무휴)</button>
+            <button type="button" class="chip" data-preset="24h-general">24시간 일반+응급</button>
+            <button type="button" class="chip" data-preset="weekday-copy">월요일 → 전 요일 복사</button>
+            <button type="button" class="chip" data-preset="weekday-copy-5">월요일 → 화~금 복사</button>
+            <button type="button" class="chip danger" data-preset="clear">시간표 비우기</button>
+          </div>
+          <div class="table-scroll">
+            <table class="hours-table">
+              <thead>
+                <tr>
+                  <th>요일</th><th>휴무</th>
+                  <th colspan="2">일반 진료</th>
+                  <th colspan="2">야간 진료</th>
+                  <th colspan="2">응급 접수</th>
+                  <th colspan="2">브레이크</th>
+                </tr>
+              </thead>
+              <tbody id="weeklyRows"></tbody>
+            </table>
+          </div>
+          <details class="paste-box">
+            <summary>텍스트 붙여넣기 파서 (예: “평일 09:00-19:00, 토 10:00-18:00, 일 휴무, 야간 19:00-익일 09:00 응급”)</summary>
+            <textarea id="hoursPaste" rows="3" placeholder="병원 홈페이지·네이버플레이스 문구를 그대로 붙여넣고 [파싱] 을 누르세요. 줄마다 하나의 규칙."></textarea>
+            <div class="paste-actions">
+              <label class="check"><input id="pasteAsEmergency" type="checkbox"> 파싱 결과를 <b>응급 접수</b> 창구로 넣기</label>
+              <button id="parseHours" class="button secondary" type="button">파싱해서 표에 채우기</button>
+            </div>
+          </details>
+          <div class="field-grid three">
+            <label class="check big"><input id="holidayOpen" type="checkbox"> 공휴일에도 진료 (파생되지 않음 — 직접 체크)</label>
+            <label>24시간 일반 진료 <select id="is24hGeneral"><option value="">자동</option><option value="true">예</option><option value="false">아니오</option></select></label>
+            <label>24시간 응급 <select id="is24hEmergency"><option value="">자동</option><option value="true">예</option><option value="false">아니오</option></select></label>
+          </div>
+        </section>
+
+        <section class="form-section">
+          <div class="section-heading">
+            <div><span>04</span><h3>특별 운영 · 임시휴진</h3></div>
+            <p>특정 날짜의 예외. 요일 시간표보다 우선합니다.</p>
+          </div>
+          <div id="specialRows" class="special-rows"></div>
+          <button id="addSpecial" class="text-button" type="button">+ 날짜 추가</button>
+        </section>
+
+        <section class="form-section">
+          <div class="section-heading">
+            <div><span>05</span><h3>진료 동물 · 시설</h3></div>
+            <p>확인된 것만 체크. 모르면 비워 둡니다.</p>
+          </div>
+          <div id="speciesBox" class="check-grid"></div>
+          <div id="facilityBox" class="check-grid"></div>
+        </section>
+
+        <section class="form-section">
+          <div class="section-heading">
+            <div><span>06</span><h3>메모</h3></div>
+            <p>앱 상세 화면에 노출됩니다 (예: “야간 방문 전 전화 필수”, “고양이 전문”).</p>
+          </div>
+          <textarea id="notes" rows="2" maxlength="300"></textarea>
+        </section>
+
+        <section class="form-section">
+          <div class="section-heading">
+            <div><span>07</span><h3>YAML 미리보기</h3></div>
+            <p><code>data/overrides/&lt;id&gt;.yaml</code> 로 그대로 저장하면 됩니다.</p>
+          </div>
+          <div id="validation" class="validation" hidden></div>
+          <pre id="yamlPreview" class="yaml-preview">(병원을 선택하면 표시)</pre>
+        </section>
+
+        <footer class="form-actions">
+          <div class="left">
+            <button id="deleteButton" class="button danger" type="button">이 병원 저장본 삭제</button>
+          </div>
+          <div class="right">
+            <button id="copyYaml" class="button secondary" type="button">YAML 복사</button>
+            <button id="downloadYaml" class="button secondary" type="button">YAML 다운로드</button>
+            <button id="saveButton" class="button primary" type="button">저장 (브라우저)</button>
+            <button id="saveNextButton" class="button primary" type="button">저장 + 다음</button>
+          </div>
+        </footer>
+      </form>
+    </main>
+
+    <template id="phoneRowTemplate">
+      <div class="phone-row">
+        <select data-field="type"><option value="main">대표</option><option value="night">야간</option><option value="emergency">응급</option></select>
+        <input data-field="phone" type="tel" placeholder="02-000-0000">
+        <button class="text-button remove-row" type="button">삭제</button>
+      </div>
+    </template>
+
+    <template id="specialRowTemplate">
+      <div class="special-row">
+        <input data-field="date" type="date">
+        <label class="check"><input data-field="isClosed" type="checkbox"> 휴진</label>
+        <input data-field="reason" type="text" placeholder="사유 (추석, 내부 공사…)">
+        <span class="mini-label">일반</span><input data-field="open" type="time"><input data-field="close" type="time">
+        <span class="mini-label">응급</span><input data-field="emergencyOpen" type="time"><input data-field="emergencyClose" type="time">
+        <label class="check"><input data-field="emergencyNext" type="checkbox"> 익일</label>
+        <button class="text-button remove-row" type="button">삭제</button>
+      </div>
+    </template>
+
+    <script src="./app.js?v=20260818-1"></script>
+  </body>
+</html>
