@@ -174,6 +174,13 @@ function renderSearch({ append = false } = {}) {
   for (const b of $$(".search-result")) b.addEventListener("click", () => selectHospital(b.dataset.id));
 }
 
+
+function updateReferenceLinks(h) {
+  const query = `${h.sigungu || h.sido || ""} ${h.name}`.trim();
+  $("#naverMapLink").href = `https://map.naver.com/p/search/${encodeURIComponent(query)}`;
+  $("#naverBlogLink").href = `https://search.naver.com/search.naver?where=blog&query=${encodeURIComponent(query)}`;
+}
+
 function selectHospital(id, { force = false } = {}) {
   if (!force && state.dirty && state.selected && state.selected.id !== id) {
     if (!confirm("저장하지 않은 변경이 있습니다. 버리고 이동할까요?")) return;
@@ -194,6 +201,7 @@ function selectHospital(id, { force = false } = {}) {
     pill.className = "pill muted";
     pill.textContent = "공개 데이터: 미검증(공공데이터만)";
   }
+  updateReferenceLinks(h);
   fillForm(state.entries.get(id) || entryFromPublic(h));
   renderSearch({ append: true });
   $("#detailForm").scrollIntoView({ behavior: "smooth", block: "start" });

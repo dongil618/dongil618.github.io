@@ -121,3 +121,5 @@ code, pre { font-family: "SF Mono", Menlo, Consolas, monospace; }
   background: rgba(14,17,20,.94); backdrop-filter: blur(8px); border-top: 1px solid var(--line); padding: 10px 0;
 }
 .form-actions .right, .form-actions .left { display: flex; gap: 8px; flex-wrap: wrap; }
+.reference-links { display: flex; gap: 6px; }
+.reference-links .button { font-size: 12px; padding: 6px 10px; text-decoration: none; color: inherit; }
