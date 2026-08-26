@@ -1,0 +1,8 @@
+:root{color-scheme:light dark;--bg:#fff;--ink:#1a1d21;--mid:#5b6470;--line:#e5e8ec;--brand:#0F8F88}
+@media(prefers-color-scheme:dark){:root{--bg:#0E1114;--ink:#EEF1F4;--mid:#9AA4AF;--line:#232a31;--brand:#33D6CE}}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 Pretendard,-apple-system,"Apple SD Gothic Neo","Noto Sans KR",sans-serif}
+main{max-width:720px;margin:0 auto;padding:40px 20px 80px}
+h1{font-size:26px;margin:0 0 4px}h2{font-size:18px;margin:32px 0 8px}
+p,li{color:var(--ink)}.meta{color:var(--mid);font-size:14px}a{color:var(--brand)}
+table{border-collapse:collapse;width:100%;font-size:14px}td,th{border:1px solid var(--line);padding:8px;text-align:left;vertical-align:top}
+footer{margin-top:48px;color:var(--mid);font-size:13px;border-top:1px solid var(--line);padding-top:16px}
