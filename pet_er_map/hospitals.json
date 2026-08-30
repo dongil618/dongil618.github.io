@@ -9329,7 +9329,7 @@
     "status": "영업/정상",
     "permitDate": "2026-06-04",
     "closedDate": null,
-    "sourceUpdatedAt": "2026-06-05 21:02:00",
+    "sourceUpdatedAt": "2026-08-29 21:02:00",
     "localGovernmentCode": "4181000",
     "source": "행정안전부_동물_동물병원 조회서비스",
     "verified": {
@@ -86153,7 +86153,7 @@
     "status": "영업/정상",
     "permitDate": "2025-03-25",
     "closedDate": null,
-    "sourceUpdatedAt": "2026-05-03 22:02:00",
+    "sourceUpdatedAt": "2026-08-29 21:32:00",
     "localGovernmentCode": "3930000",
     "source": "행정안전부_동물_동물병원 조회서비스",
     "verified": {
@@ -135211,7 +135211,7 @@
     "status": "영업/정상",
     "permitDate": "2020-05-08",
     "closedDate": null,
-    "sourceUpdatedAt": "2026-08-05 21:32:00",
+    "sourceUpdatedAt": "2026-08-29 21:32:00",
     "localGovernmentCode": "5530000",
     "source": "행정안전부_동물_동물병원 조회서비스",
     "verified": null,
@@ -151619,7 +151619,7 @@
     "status": "영업/정상",
     "permitDate": "2023-08-21",
     "closedDate": null,
-    "sourceUpdatedAt": "2025-12-15 16:15:28",
+    "sourceUpdatedAt": "2026-08-29 21:32:00",
     "localGovernmentCode": "5450000",
     "source": "행정안전부_동물_동물병원 조회서비스",
     "verified": {
@@ -151897,7 +151897,7 @@
     "status": "영업/정상",
     "permitDate": "2024-11-26",
     "closedDate": null,
-    "sourceUpdatedAt": "2025-12-15 16:15:28",
+    "sourceUpdatedAt": "2026-08-29 21:32:00",
     "localGovernmentCode": "5450000",
     "source": "행정안전부_동물_동물병원 조회서비스",
     "verified": {
@@ -160169,6 +160169,28 @@
       "facilities": [],
       "notes": null
     },
+    "realtime": null
+  },
+  {
+    "id": "567000001020260003",
+    "name": "오늘동물병원",
+    "lat": 35.2218445,
+    "lng": 128.5713266,
+    "address": "경상남도 창원시 마산회원구 북성로 164, 2층 (회원동)",
+    "roadAddress": "경상남도 창원시 마산회원구 북성로 164, 2층 (회원동)",
+    "lotAddress": "경상남도 창원시 마산회원구 회원동 29-15 2층",
+    "sido": "경상남도",
+    "sigungu": "창원시 마산회원구",
+    "phone": "055-715-7590",
+    "phones": [],
+    "statusCode": "01",
+    "status": "영업/정상",
+    "permitDate": "2026-08-28",
+    "closedDate": null,
+    "sourceUpdatedAt": "2026-08-29 21:32:00",
+    "localGovernmentCode": "5670000",
+    "source": "행정안전부_동물_동물병원 조회서비스",
+    "verified": null,
     "realtime": null
   },
   {
@@ -193513,7 +193535,7 @@
     "status": "영업/정상",
     "permitDate": "2024-08-09",
     "closedDate": null,
-    "sourceUpdatedAt": "2026-05-08 22:50:59",
+    "sourceUpdatedAt": "2026-08-29 22:02:00",
     "localGovernmentCode": "3470000",
     "source": "행정안전부_동물_동물병원 조회서비스",
     "verified": {
@@ -268851,7 +268873,7 @@
     "status": "영업/정상",
     "permitDate": "2019-04-03",
     "closedDate": null,
-    "sourceUpdatedAt": "2026-08-25 22:02:00",
+    "sourceUpdatedAt": "2026-08-29 22:02:00",
     "localGovernmentCode": "3200000",
     "source": "행정안전부_동물_동물병원 조회서비스",
     "verified": {
@@ -310231,7 +310253,7 @@
     "status": "영업/정상",
     "permitDate": "2007-07-25",
     "closedDate": null,
-    "sourceUpdatedAt": "2026-05-07 22:32:59",
+    "sourceUpdatedAt": "2026-08-29 22:02:00",
     "localGovernmentCode": "3030000",
     "source": "행정안전부_동물_동물병원 조회서비스",
     "verified": {
