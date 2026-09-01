@@ -29402,7 +29402,7 @@
   {
     "id": "3460000-202-2026-00001",
     "name": "러너스테이",
-    "type": "localBath",
+    "type": "jjimjilbang",
     "latitude": 35.8256103,
     "longitude": 128.6114136,
     "address": "대구광역시 수성구 용학로 12-1, 1층 (파동)",
@@ -29412,11 +29412,11 @@
     "statusCode": "01",
     "status": "영업/정상",
     "detailStatus": "영업",
-    "hasSweatRoom": false,
-    "bathRoomCount": null,
+    "hasSweatRoom": true,
+    "bathRoomCount": 0,
     "permitDate": "2026-07-28",
     "closedDate": null,
-    "updatedAt": "2026-07-29 22:26:35",
+    "updatedAt": "2026-08-29 22:26:35",
     "localGovernmentCode": "3460000",
     "source": "행정안전부_생활_목욕장업 조회서비스"
   },
