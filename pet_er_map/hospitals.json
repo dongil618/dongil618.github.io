@@ -214322,6 +214322,134 @@
     "realtime": null
   },
   {
+    "id": "367000001020040003",
+    "name": "대전양한방동물병원",
+    "lat": 36.3600047,
+    "lng": 127.3084417,
+    "address": "대전광역시 유성구 현충원로347번길 31-10, 1층 (구암동)",
+    "roadAddress": "대전광역시 유성구 현충원로347번길 31-10, 1층 (구암동)",
+    "lotAddress": "대전광역시 유성구 구암동 656-4",
+    "sido": "대전광역시",
+    "sigungu": "유성구",
+    "phone": "",
+    "phones": [
+      {
+        "type": "main",
+        "phone": "0507-1431-7592",
+        "verifiedAt": null
+      }
+    ],
+    "statusCode": "01",
+    "status": "영업/정상",
+    "permitDate": "2004-09-22",
+    "closedDate": null,
+    "sourceUpdatedAt": "2026-09-14 22:02:00",
+    "localGovernmentCode": "3670000",
+    "source": "행정안전부_동물_동물병원 조회서비스",
+    "verified": {
+      "sourceType": "mapApi",
+      "sourceUrl": "https://m.place.naver.com/pet/15940158/home",
+      "verifiedAt": "2026-08-24T13:30:20+09:00",
+      "verifiedBy": "admin",
+      "confidenceScore": 40,
+      "is24hGeneral": false,
+      "is24hEmergency": false,
+      "nightEmergency": false,
+      "holidayOpen": false,
+      "hours": [
+        {
+          "day": 1,
+          "open": 600,
+          "close": 1170,
+          "nightOpen": null,
+          "nightClose": null,
+          "emergencyOpen": null,
+          "emergencyClose": null,
+          "isClosed": false,
+          "breakStart": 750,
+          "breakEnd": 810
+        },
+        {
+          "day": 2,
+          "open": 600,
+          "close": 1170,
+          "nightOpen": null,
+          "nightClose": null,
+          "emergencyOpen": null,
+          "emergencyClose": null,
+          "isClosed": false,
+          "breakStart": 750,
+          "breakEnd": 810
+        },
+        {
+          "day": 3,
+          "open": null,
+          "close": null,
+          "nightOpen": null,
+          "nightClose": null,
+          "emergencyOpen": null,
+          "emergencyClose": null,
+          "isClosed": true,
+          "breakStart": null,
+          "breakEnd": null
+        },
+        {
+          "day": 4,
+          "open": 600,
+          "close": 1170,
+          "nightOpen": null,
+          "nightClose": null,
+          "emergencyOpen": null,
+          "emergencyClose": null,
+          "isClosed": false,
+          "breakStart": 750,
+          "breakEnd": 810
+        },
+        {
+          "day": 5,
+          "open": 600,
+          "close": 1170,
+          "nightOpen": null,
+          "nightClose": null,
+          "emergencyOpen": null,
+          "emergencyClose": null,
+          "isClosed": false,
+          "breakStart": 750,
+          "breakEnd": 810
+        },
+        {
+          "day": 6,
+          "open": 600,
+          "close": 1170,
+          "nightOpen": null,
+          "nightClose": null,
+          "emergencyOpen": null,
+          "emergencyClose": null,
+          "isClosed": false,
+          "breakStart": 750,
+          "breakEnd": 810
+        },
+        {
+          "day": 7,
+          "open": null,
+          "close": null,
+          "nightOpen": null,
+          "nightClose": null,
+          "emergencyOpen": null,
+          "emergencyClose": null,
+          "isClosed": true,
+          "breakStart": null,
+          "breakEnd": null
+        }
+      ],
+      "specialHours": [],
+      "species": [],
+      "facilities": [],
+      "notes": null
+    },
+    "realtime": null
+  },
+  {
     "id": "367000001020130003",
     "name": "대한동물병원",
     "lat": 36.3558982,
@@ -216619,134 +216747,6 @@
     "localGovernmentCode": "3670000",
     "source": "행정안전부_동물_동물병원 조회서비스",
     "verified": null,
-    "realtime": null
-  },
-  {
-    "id": "367000001020040003",
-    "name": "쿨펫 양한방 동물병원",
-    "lat": 36.3584675,
-    "lng": 127.35434,
-    "address": "대전광역시 유성구 한밭대로 502, 홈플러스 3층 (봉명동)",
-    "roadAddress": "대전광역시 유성구 한밭대로 502, 홈플러스 3층 (봉명동)",
-    "lotAddress": "대전광역시 유성구 봉명동 669 홈플러스 3층",
-    "sido": "대전광역시",
-    "sigungu": "유성구",
-    "phone": "",
-    "phones": [
-      {
-        "type": "main",
-        "phone": "0507-1431-7592",
-        "verifiedAt": null
-      }
-    ],
-    "statusCode": "01",
-    "status": "영업/정상",
-    "permitDate": "2004-09-22",
-    "closedDate": null,
-    "sourceUpdatedAt": "2026-05-04 22:36:49",
-    "localGovernmentCode": "3670000",
-    "source": "행정안전부_동물_동물병원 조회서비스",
-    "verified": {
-      "sourceType": "mapApi",
-      "sourceUrl": "https://m.place.naver.com/pet/15940158/home",
-      "verifiedAt": "2026-08-24T13:30:20+09:00",
-      "verifiedBy": "admin",
-      "confidenceScore": 40,
-      "is24hGeneral": false,
-      "is24hEmergency": false,
-      "nightEmergency": false,
-      "holidayOpen": false,
-      "hours": [
-        {
-          "day": 1,
-          "open": 600,
-          "close": 1170,
-          "nightOpen": null,
-          "nightClose": null,
-          "emergencyOpen": null,
-          "emergencyClose": null,
-          "isClosed": false,
-          "breakStart": 750,
-          "breakEnd": 810
-        },
-        {
-          "day": 2,
-          "open": 600,
-          "close": 1170,
-          "nightOpen": null,
-          "nightClose": null,
-          "emergencyOpen": null,
-          "emergencyClose": null,
-          "isClosed": false,
-          "breakStart": 750,
-          "breakEnd": 810
-        },
-        {
-          "day": 3,
-          "open": null,
-          "close": null,
-          "nightOpen": null,
-          "nightClose": null,
-          "emergencyOpen": null,
-          "emergencyClose": null,
-          "isClosed": true,
-          "breakStart": null,
-          "breakEnd": null
-        },
-        {
-          "day": 4,
-          "open": 600,
-          "close": 1170,
-          "nightOpen": null,
-          "nightClose": null,
-          "emergencyOpen": null,
-          "emergencyClose": null,
-          "isClosed": false,
-          "breakStart": 750,
-          "breakEnd": 810
-        },
-        {
-          "day": 5,
-          "open": 600,
-          "close": 1170,
-          "nightOpen": null,
-          "nightClose": null,
-          "emergencyOpen": null,
-          "emergencyClose": null,
-          "isClosed": false,
-          "breakStart": 750,
-          "breakEnd": 810
-        },
-        {
-          "day": 6,
-          "open": 600,
-          "close": 1170,
-          "nightOpen": null,
-          "nightClose": null,
-          "emergencyOpen": null,
-          "emergencyClose": null,
-          "isClosed": false,
-          "breakStart": 750,
-          "breakEnd": 810
-        },
-        {
-          "day": 7,
-          "open": null,
-          "close": null,
-          "nightOpen": null,
-          "nightClose": null,
-          "emergencyOpen": null,
-          "emergencyClose": null,
-          "isClosed": true,
-          "breakStart": null,
-          "breakEnd": null
-        }
-      ],
-      "specialHours": [],
-      "species": [],
-      "facilities": [],
-      "notes": null
-    },
     "realtime": null
   },
   {
