@@ -36005,7 +36005,7 @@
     "status": "영업/정상",
     "permitDate": "2016-07-11",
     "closedDate": null,
-    "sourceUpdatedAt": "2025-12-15 16:15:28",
+    "sourceUpdatedAt": "2026-09-24 21:02:00",
     "localGovernmentCode": "4020000",
     "source": "행정안전부_동물_동물병원 조회서비스",
     "verified": {
@@ -251495,7 +251495,7 @@
     "status": "영업/정상",
     "permitDate": "2009-08-14",
     "closedDate": null,
-    "sourceUpdatedAt": "2026-05-20 03:03:03",
+    "sourceUpdatedAt": "2026-09-24 22:02:00",
     "localGovernmentCode": "3220000",
     "source": "행정안전부_동물_동물병원 조회서비스",
     "verified": {
@@ -269661,7 +269661,7 @@
     "status": "영업/정상",
     "permitDate": "2003-07-03",
     "closedDate": null,
-    "sourceUpdatedAt": "2026-09-19 22:02:00",
+    "sourceUpdatedAt": "2026-09-24 22:02:00",
     "localGovernmentCode": "3200000",
     "source": "행정안전부_동물_동물병원 조회서비스",
     "verified": null,
@@ -310429,7 +310429,7 @@
     "status": "영업/정상",
     "permitDate": "2007-07-25",
     "closedDate": null,
-    "sourceUpdatedAt": "2026-08-29 22:02:00",
+    "sourceUpdatedAt": "2026-09-24 22:02:00",
     "localGovernmentCode": "3030000",
     "source": "행정안전부_동물_동물병원 조회서비스",
     "verified": {
@@ -386890,134 +386890,6 @@
     "realtime": null
   },
   {
-    "id": "582000001020160002",
-    "name": "24시언제나동물병원",
-    "lat": 35.1878858,
-    "lng": 126.8904249,
-    "address": "전남광주통합특별시 북구 하백로5번길 1 (매곡동)",
-    "roadAddress": "전남광주통합특별시 북구 하백로5번길 1 (매곡동)",
-    "lotAddress": "전남광주통합특별시 북구 매곡동 370-7",
-    "sido": "전남광주통합특별시",
-    "sigungu": "북구",
-    "phone": "062-571-0011",
-    "phones": [
-      {
-        "type": "main",
-        "phone": "062-571-0011",
-        "verifiedAt": null
-      }
-    ],
-    "statusCode": "01",
-    "status": "영업/정상",
-    "permitDate": "2016-11-03",
-    "closedDate": null,
-    "sourceUpdatedAt": "2026-07-14 11:38:15",
-    "localGovernmentCode": "5820000",
-    "source": "행정안전부_동물_동물병원 조회서비스",
-    "verified": {
-      "sourceType": "mapApi",
-      "sourceUrl": "https://m.place.naver.com/pet/38732047/home",
-      "verifiedAt": "2026-08-19T23:53:22+09:00",
-      "verifiedBy": "admin",
-      "confidenceScore": 25,
-      "is24hGeneral": false,
-      "is24hEmergency": false,
-      "nightEmergency": false,
-      "holidayOpen": false,
-      "hours": [
-        {
-          "day": 1,
-          "open": 540,
-          "close": 1110,
-          "nightOpen": null,
-          "nightClose": null,
-          "emergencyOpen": null,
-          "emergencyClose": null,
-          "isClosed": false,
-          "breakStart": 720,
-          "breakEnd": 780
-        },
-        {
-          "day": 2,
-          "open": 540,
-          "close": 1110,
-          "nightOpen": null,
-          "nightClose": null,
-          "emergencyOpen": null,
-          "emergencyClose": null,
-          "isClosed": false,
-          "breakStart": 720,
-          "breakEnd": 780
-        },
-        {
-          "day": 3,
-          "open": 540,
-          "close": 720,
-          "nightOpen": null,
-          "nightClose": null,
-          "emergencyOpen": null,
-          "emergencyClose": null,
-          "isClosed": false,
-          "breakStart": null,
-          "breakEnd": null
-        },
-        {
-          "day": 4,
-          "open": 540,
-          "close": 1110,
-          "nightOpen": null,
-          "nightClose": null,
-          "emergencyOpen": null,
-          "emergencyClose": null,
-          "isClosed": false,
-          "breakStart": 720,
-          "breakEnd": 780
-        },
-        {
-          "day": 5,
-          "open": 540,
-          "close": 1110,
-          "nightOpen": null,
-          "nightClose": null,
-          "emergencyOpen": null,
-          "emergencyClose": null,
-          "isClosed": false,
-          "breakStart": 720,
-          "breakEnd": 780
-        },
-        {
-          "day": 6,
-          "open": 540,
-          "close": 960,
-          "nightOpen": null,
-          "nightClose": null,
-          "emergencyOpen": null,
-          "emergencyClose": null,
-          "isClosed": false,
-          "breakStart": null,
-          "breakEnd": null
-        },
-        {
-          "day": 7,
-          "open": null,
-          "close": null,
-          "nightOpen": null,
-          "nightClose": null,
-          "emergencyOpen": null,
-          "emergencyClose": null,
-          "isClosed": true,
-          "breakStart": null,
-          "breakEnd": null
-        }
-      ],
-      "specialHours": [],
-      "species": [],
-      "facilities": [],
-      "notes": "점심시간은 오후 12시부터 1시까지 입니다."
-    },
-    "realtime": null
-  },
-  {
     "id": "582000001020040013",
     "name": "가야동물병원",
     "lat": 35.1747427,
@@ -388616,6 +388488,134 @@
       "species": [],
       "facilities": [],
       "notes": "매주 목요일, 토요일은 오후 1시까지 진료합니다."
+    },
+    "realtime": null
+  },
+  {
+    "id": "582000001020160002",
+    "name": "언제나동물병원",
+    "lat": 35.1876885,
+    "lng": 126.8903918,
+    "address": "전남광주통합특별시 북구 서하로 91, 비젼타워 101, 102호 (매곡동)",
+    "roadAddress": "전남광주통합특별시 북구 서하로 91, 비젼타워 101, 102호 (매곡동)",
+    "lotAddress": "전남광주통합특별시 북구 매곡동 370-1",
+    "sido": "전남광주통합특별시",
+    "sigungu": "북구",
+    "phone": "062-571-0011",
+    "phones": [
+      {
+        "type": "main",
+        "phone": "062-571-0011",
+        "verifiedAt": null
+      }
+    ],
+    "statusCode": "01",
+    "status": "영업/정상",
+    "permitDate": "2016-11-03",
+    "closedDate": null,
+    "sourceUpdatedAt": "2026-09-24 22:02:00",
+    "localGovernmentCode": "5820000",
+    "source": "행정안전부_동물_동물병원 조회서비스",
+    "verified": {
+      "sourceType": "mapApi",
+      "sourceUrl": "https://m.place.naver.com/pet/38732047/home",
+      "verifiedAt": "2026-08-19T23:53:22+09:00",
+      "verifiedBy": "admin",
+      "confidenceScore": 25,
+      "is24hGeneral": false,
+      "is24hEmergency": false,
+      "nightEmergency": false,
+      "holidayOpen": false,
+      "hours": [
+        {
+          "day": 1,
+          "open": 540,
+          "close": 1110,
+          "nightOpen": null,
+          "nightClose": null,
+          "emergencyOpen": null,
+          "emergencyClose": null,
+          "isClosed": false,
+          "breakStart": 720,
+          "breakEnd": 780
+        },
+        {
+          "day": 2,
+          "open": 540,
+          "close": 1110,
+          "nightOpen": null,
+          "nightClose": null,
+          "emergencyOpen": null,
+          "emergencyClose": null,
+          "isClosed": false,
+          "breakStart": 720,
+          "breakEnd": 780
+        },
+        {
+          "day": 3,
+          "open": 540,
+          "close": 720,
+          "nightOpen": null,
+          "nightClose": null,
+          "emergencyOpen": null,
+          "emergencyClose": null,
+          "isClosed": false,
+          "breakStart": null,
+          "breakEnd": null
+        },
+        {
+          "day": 4,
+          "open": 540,
+          "close": 1110,
+          "nightOpen": null,
+          "nightClose": null,
+          "emergencyOpen": null,
+          "emergencyClose": null,
+          "isClosed": false,
+          "breakStart": 720,
+          "breakEnd": 780
+        },
+        {
+          "day": 5,
+          "open": 540,
+          "close": 1110,
+          "nightOpen": null,
+          "nightClose": null,
+          "emergencyOpen": null,
+          "emergencyClose": null,
+          "isClosed": false,
+          "breakStart": 720,
+          "breakEnd": 780
+        },
+        {
+          "day": 6,
+          "open": 540,
+          "close": 960,
+          "nightOpen": null,
+          "nightClose": null,
+          "emergencyOpen": null,
+          "emergencyClose": null,
+          "isClosed": false,
+          "breakStart": null,
+          "breakEnd": null
+        },
+        {
+          "day": 7,
+          "open": null,
+          "close": null,
+          "nightOpen": null,
+          "nightClose": null,
+          "emergencyOpen": null,
+          "emergencyClose": null,
+          "isClosed": true,
+          "breakStart": null,
+          "breakEnd": null
+        }
+      ],
+      "specialHours": [],
+      "species": [],
+      "facilities": [],
+      "notes": "점심시간은 오후 12시부터 1시까지 입니다."
     },
     "realtime": null
   },
@@ -414231,6 +414231,28 @@
       "facilities": [],
       "notes": null
     },
+    "realtime": null
+  },
+  {
+    "id": "651000001020260002",
+    "name": "모두의 동물의료원",
+    "lat": 33.4849633,
+    "lng": 126.5018992,
+    "address": "제주특별자치도 제주시 연오로 91 (연동)",
+    "roadAddress": "제주특별자치도 제주시 연오로 91 (연동)",
+    "lotAddress": "제주특별자치도 제주시 연동 355-8",
+    "sido": "제주특별자치도",
+    "sigungu": "제주시",
+    "phone": "064-743-2394",
+    "phones": [],
+    "statusCode": "01",
+    "status": "영업/정상",
+    "permitDate": "2026-09-23",
+    "closedDate": null,
+    "sourceUpdatedAt": "2026-09-24 22:32:00",
+    "localGovernmentCode": "6510000",
+    "source": "행정안전부_동물_동물병원 조회서비스",
+    "verified": null,
     "realtime": null
   },
   {
