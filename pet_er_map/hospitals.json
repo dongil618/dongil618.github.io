@@ -101184,7 +101184,7 @@
     "lng": 127.1529473,
     "address": "경기도 용인시 기흥구 동백3로11번길 9, 201호 (중동)",
     "roadAddress": "경기도 용인시 기흥구 동백3로11번길 9, 201호 (중동)",
-    "lotAddress": "경기도 용인시 기흥구 중동 851-2",
+    "lotAddress": "경기도 용인시 기흥구 중동 851-2 201호",
     "sido": "경기도",
     "sigungu": "용인시 기흥구",
     "phone": "031-546-0942",
@@ -101199,7 +101199,7 @@
     "status": "영업/정상",
     "permitDate": "2019-06-12",
     "closedDate": null,
-    "sourceUpdatedAt": "2026-03-26 22:31:56",
+    "sourceUpdatedAt": "2026-09-26 21:32:00",
     "localGovernmentCode": "4050000",
     "source": "행정안전부_동물_동물병원 조회서비스",
     "verified": {
@@ -156461,28 +156461,6 @@
       "facilities": [],
       "notes": null
     },
-    "realtime": null
-  },
-  {
-    "id": "531000001019770002",
-    "name": "영진가축병원",
-    "lat": 35.0912567,
-    "lng": 128.187106,
-    "address": "경상남도 진주시 금곡면 월아산로 108",
-    "roadAddress": "경상남도 진주시 금곡면 월아산로 108",
-    "lotAddress": "경상남도 진주시 금곡면 두문리 608-18",
-    "sido": "경상남도",
-    "sigungu": "진주시",
-    "phone": "",
-    "phones": [],
-    "statusCode": "01",
-    "status": "영업/정상",
-    "permitDate": "1977-04-25",
-    "closedDate": null,
-    "sourceUpdatedAt": "2026-04-29 22:02:50",
-    "localGovernmentCode": "5310000",
-    "source": "행정안전부_동물_동물병원 조회서비스",
-    "verified": null,
     "realtime": null
   },
   {
