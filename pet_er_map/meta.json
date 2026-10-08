@@ -2,10 +2,10 @@
   "schemaVersion": 1,
   "source": "행정안전부_동물_동물병원 조회서비스",
   "sourceUrl": "https://apis.data.go.kr/1741000/animal_hospitals/info",
-  "generatedAt": "2026-10-07T23:02:31Z",
-  "sourceUpdatedAt": "2026-10-07 22:32:00",
-  "totalCount": 5267,
+  "generatedAt": "2026-10-08T23:18:25Z",
+  "sourceUpdatedAt": "2026-10-08 22:32:00",
+  "totalCount": 5270,
   "verifiedCount": 3185,
-  "contentHash": "08d70e52ffc2c761028b8a031be7037841fe41d08581ba5ca5486d2bf4ed31a6",
+  "contentHash": "c6e344b2dda1d2d4891936beb8f471208231f81a191df74211a0b1ef10162b65",
   "coordinateSystem": "WGS84 (converted from EPSG:5174)"
 }
