@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
   "datasetUrl": "https://dongil618.github.io/lotto-hotplace/lotto_dataset.json",
-  "generatedAt": "2026-11-01T06:46:16+09:00",
-  "drawCount": 987,
-  "storeCount": 10497,
-  "winningHistoryCount": 62583,
+  "generatedAt": "2026-11-08T07:08:56+09:00",
+  "drawCount": 988,
+  "storeCount": 10520,
+  "winningHistoryCount": 62685,
   "fromDraw": 262,
-  "toDraw": 1248,
+  "toDraw": 1249,
   "missingDraws": []
 }
