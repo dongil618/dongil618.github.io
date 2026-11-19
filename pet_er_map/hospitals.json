@@ -91362,134 +91362,6 @@
     "realtime": null
   },
   {
-    "id": "383000001020240002",
-    "name": "돌봄동물병원",
-    "lat": 37.3931121,
-    "lng": 126.9595553,
-    "address": "경기도 안양시 동안구 관평로 183, 평촌자이엘라 107,108호 (관양동)",
-    "roadAddress": "경기도 안양시 동안구 관평로 183, 평촌자이엘라 107,108호 (관양동)",
-    "lotAddress": "경기도 안양시 동안구 관양동 1591-12 평촌자이엘라",
-    "sido": "경기도",
-    "sigungu": "안양시 동안구",
-    "phone": "031-687-8749",
-    "phones": [
-      {
-        "type": "main",
-        "phone": "031-687-8749",
-        "verifiedAt": null
-      }
-    ],
-    "statusCode": "01",
-    "status": "영업/정상",
-    "permitDate": "2024-05-03",
-    "closedDate": null,
-    "sourceUpdatedAt": "2026-03-26 22:32:56",
-    "localGovernmentCode": "3830000",
-    "source": "행정안전부_동물_동물병원 조회서비스",
-    "verified": {
-      "sourceType": "mapApi",
-      "sourceUrl": "https://m.place.naver.com/pet/1037229606/home",
-      "verifiedAt": "2026-08-24T08:23:45+09:00",
-      "verifiedBy": "admin",
-      "confidenceScore": 25,
-      "is24hGeneral": false,
-      "is24hEmergency": false,
-      "nightEmergency": false,
-      "holidayOpen": false,
-      "hours": [
-        {
-          "day": 1,
-          "open": 600,
-          "close": 1200,
-          "nightOpen": null,
-          "nightClose": null,
-          "emergencyOpen": null,
-          "emergencyClose": null,
-          "isClosed": false,
-          "breakStart": 780,
-          "breakEnd": 840
-        },
-        {
-          "day": 2,
-          "open": 600,
-          "close": 1200,
-          "nightOpen": null,
-          "nightClose": null,
-          "emergencyOpen": null,
-          "emergencyClose": null,
-          "isClosed": false,
-          "breakStart": 780,
-          "breakEnd": 840
-        },
-        {
-          "day": 3,
-          "open": 600,
-          "close": 1200,
-          "nightOpen": null,
-          "nightClose": null,
-          "emergencyOpen": null,
-          "emergencyClose": null,
-          "isClosed": false,
-          "breakStart": 780,
-          "breakEnd": 840
-        },
-        {
-          "day": 4,
-          "open": 600,
-          "close": 1200,
-          "nightOpen": null,
-          "nightClose": null,
-          "emergencyOpen": null,
-          "emergencyClose": null,
-          "isClosed": false,
-          "breakStart": 780,
-          "breakEnd": 840
-        },
-        {
-          "day": 5,
-          "open": 600,
-          "close": 1200,
-          "nightOpen": null,
-          "nightClose": null,
-          "emergencyOpen": null,
-          "emergencyClose": null,
-          "isClosed": false,
-          "breakStart": 780,
-          "breakEnd": 840
-        },
-        {
-          "day": 6,
-          "open": 600,
-          "close": 1140,
-          "nightOpen": null,
-          "nightClose": null,
-          "emergencyOpen": null,
-          "emergencyClose": null,
-          "isClosed": false,
-          "breakStart": 780,
-          "breakEnd": 840
-        },
-        {
-          "day": 7,
-          "open": 720,
-          "close": 1020,
-          "nightOpen": null,
-          "nightClose": null,
-          "emergencyOpen": null,
-          "emergencyClose": null,
-          "isClosed": false,
-          "breakStart": 780,
-          "breakEnd": 840
-        }
-      ],
-      "specialHours": [],
-      "species": [],
-      "facilities": [],
-      "notes": "일요일(셋째주제외) 예약진료합니다. 방문전 연락주세요."
-    },
-    "realtime": null
-  },
-  {
     "id": "383000001020220001",
     "name": "동물병원 오월의산책",
     "lat": 37.3730112,
@@ -111183,7 +111055,7 @@
     "status": "영업/정상",
     "permitDate": "2025-07-18",
     "closedDate": null,
-    "sourceUpdatedAt": "2026-03-26 22:31:55",
+    "sourceUpdatedAt": "2026-11-17 21:31:44",
     "localGovernmentCode": "4050000",
     "source": "행정안전부_동물_동물병원 조회서비스",
     "verified": null,
@@ -129377,7 +129249,7 @@
     "status": "영업/정상",
     "permitDate": "2022-09-15",
     "closedDate": null,
-    "sourceUpdatedAt": "2026-11-13 21:31:46",
+    "sourceUpdatedAt": "2026-11-17 21:31:44",
     "localGovernmentCode": "5600000",
     "source": "행정안전부_동물_동물병원 조회서비스",
     "verified": {
@@ -136351,7 +136223,7 @@
     "status": "영업/정상",
     "permitDate": "2015-04-17",
     "closedDate": null,
-    "sourceUpdatedAt": "2026-11-13 21:31:47",
+    "sourceUpdatedAt": "2026-11-17 21:31:44",
     "localGovernmentCode": "5530000",
     "source": "행정안전부_동물_동물병원 조회서비스",
     "verified": {
@@ -216989,7 +216861,7 @@
   },
   {
     "id": "365000001020190003",
-    "name": "대전24시 센트럴동물병원",
+    "name": "대전센트럴동물병원",
     "lat": 36.3290458,
     "lng": 127.4050386,
     "address": "대전광역시 중구 계룡로 789, 1층 (용두동)",
@@ -217009,7 +216881,7 @@
     "status": "영업/정상",
     "permitDate": "2019-08-22",
     "closedDate": null,
-    "sourceUpdatedAt": "2026-05-11 22:40:51",
+    "sourceUpdatedAt": "2026-11-17 22:01:45",
     "localGovernmentCode": "3650000",
     "source": "행정안전부_동물_동물병원 조회서비스",
     "verified": {
@@ -345529,7 +345401,7 @@
     "status": "영업/정상",
     "permitDate": "2025-03-20",
     "closedDate": null,
-    "sourceUpdatedAt": "2026-04-25 22:32:15",
+    "sourceUpdatedAt": "2026-11-17 22:31:43",
     "localGovernmentCode": "3060000",
     "source": "행정안전부_동물_동물병원 조회서비스",
     "verified": {
@@ -364467,7 +364339,7 @@
     "status": "영업/정상",
     "permitDate": "2022-08-08",
     "closedDate": null,
-    "sourceUpdatedAt": "2026-04-25 22:32:14",
+    "sourceUpdatedAt": "2026-11-17 22:31:48",
     "localGovernmentCode": "3510500",
     "source": "행정안전부_동물_동물병원 조회서비스",
     "verified": {
@@ -390041,6 +389913,28 @@
       "facilities": [],
       "notes": "일요일 휴진"
     },
+    "realtime": null
+  },
+  {
+    "id": "579000001020260002",
+    "name": "오천동물의료센터",
+    "lat": 34.9363864,
+    "lng": 127.4962956,
+    "address": "전남광주통합특별시 순천시 풍덕새길 8-14, 1층 (풍덕동)",
+    "roadAddress": "전남광주통합특별시 순천시 풍덕새길 8-14, 1층 (풍덕동)",
+    "lotAddress": "전남광주통합특별시 순천시 풍덕동 1764-3",
+    "sido": "전남광주통합특별시",
+    "sigungu": "순천시",
+    "phone": "061-811-0501",
+    "phones": [],
+    "statusCode": "01",
+    "status": "영업/정상",
+    "permitDate": "2026-11-16",
+    "closedDate": null,
+    "sourceUpdatedAt": "2026-11-17 22:32:23",
+    "localGovernmentCode": "5790000",
+    "source": "행정안전부_동물_동물병원 조회서비스",
+    "verified": null,
     "realtime": null
   },
   {
