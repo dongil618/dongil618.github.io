@@ -97673,7 +97673,7 @@
     "status": "영업/정상",
     "permitDate": "2021-08-20",
     "closedDate": null,
-    "sourceUpdatedAt": "2026-05-10 22:07:40",
+    "sourceUpdatedAt": "2026-11-25 21:31:38",
     "localGovernmentCode": "4140000",
     "source": "행정안전부_동물_동물병원 조회서비스",
     "verified": null,
@@ -106357,7 +106357,7 @@
     "status": "영업/정상",
     "permitDate": "2025-12-30",
     "closedDate": null,
-    "sourceUpdatedAt": "2026-03-26 22:31:57",
+    "sourceUpdatedAt": "2026-11-25 21:31:39",
     "localGovernmentCode": "4050000",
     "source": "행정안전부_동물_동물병원 조회서비스",
     "verified": {
@@ -126683,7 +126683,7 @@
     "status": "영업/정상",
     "permitDate": "2011-05-18",
     "closedDate": null,
-    "sourceUpdatedAt": "2026-03-26 22:30:28",
+    "sourceUpdatedAt": "2026-11-25 21:35:42",
     "localGovernmentCode": "3910000",
     "source": "행정안전부_동물_동물병원 조회서비스",
     "verified": {
@@ -175919,7 +175919,7 @@
     "status": "영업/정상",
     "permitDate": "2023-06-01",
     "closedDate": null,
-    "sourceUpdatedAt": "2025-12-15 16:15:28",
+    "sourceUpdatedAt": "2026-11-25 21:31:38",
     "localGovernmentCode": "5060000",
     "source": "행정안전부_동물_동물병원 조회서비스",
     "verified": null,
@@ -214227,7 +214227,7 @@
     "status": "영업/정상",
     "permitDate": "2015-12-18",
     "closedDate": null,
-    "sourceUpdatedAt": "2026-07-09 22:02:00",
+    "sourceUpdatedAt": "2026-11-25 22:01:38",
     "localGovernmentCode": "3670000",
     "source": "행정안전부_동물_동물병원 조회서비스",
     "verified": {
@@ -255113,7 +255113,7 @@
     "status": "영업/정상",
     "permitDate": "2022-06-30",
     "closedDate": null,
-    "sourceUpdatedAt": "2026-05-27 03:03:03",
+    "sourceUpdatedAt": "2026-11-25 22:04:59",
     "localGovernmentCode": "3240000",
     "source": "행정안전부_동물_동물병원 조회서비스",
     "verified": {
@@ -267907,7 +267907,7 @@
     "status": "영업/정상",
     "permitDate": "2003-07-03",
     "closedDate": null,
-    "sourceUpdatedAt": "2026-09-24 22:02:00",
+    "sourceUpdatedAt": "2026-11-25 22:01:38",
     "localGovernmentCode": "3200000",
     "source": "행정안전부_동물_동물병원 조회서비스",
     "verified": null,
@@ -268725,7 +268725,7 @@
     "status": "영업/정상",
     "permitDate": "2012-01-20",
     "closedDate": null,
-    "sourceUpdatedAt": "2026-09-19 22:02:00",
+    "sourceUpdatedAt": "2026-11-25 22:01:38",
     "localGovernmentCode": "3200000",
     "source": "행정안전부_동물_동물병원 조회서비스",
     "verified": {
@@ -289865,7 +289865,7 @@
     "lotAddress": "서울특별시 동대문구 청량리동 359",
     "sido": "서울특별시",
     "sigungu": "동대문구",
-    "phone": "02-963-7582",
+    "phone": "02-962-3344",
     "phones": [
       {
         "type": "main",
@@ -289877,7 +289877,7 @@
     "status": "영업/정상",
     "permitDate": "1999-08-26",
     "closedDate": null,
-    "sourceUpdatedAt": "2026-05-08 22:40:05",
+    "sourceUpdatedAt": "2026-11-25 22:01:38",
     "localGovernmentCode": "3050000",
     "source": "행정안전부_동물_동물병원 조회서비스",
     "verified": {
@@ -290517,7 +290517,7 @@
     "status": "영업/정상",
     "permitDate": "2011-12-07",
     "closedDate": null,
-    "sourceUpdatedAt": "2026-05-03 22:39:06",
+    "sourceUpdatedAt": "2026-11-25 22:01:39",
     "localGovernmentCode": "3190000",
     "source": "행정안전부_동물_동물병원 조회서비스",
     "verified": {
